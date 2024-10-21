@@ -10,6 +10,7 @@ Brun: #672727
 */
 :root {
   --vit: #f4f4f8;
+  --rosa: #fab0a6;
   --orange: #db7851;
   --röd: #af232c;
   --brun: #762727;
@@ -19,7 +20,7 @@ Brun: #672727
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */
 
 body {
   font-family: Inter, Arial, sans-serif;
@@ -37,6 +38,8 @@ header {
   max-height: 123px;
   padding: 2rem 3rem;
   box-shadow: 0 6px 13px 7px #7627273e;
+  position: relative;
+  z-index: 1;
 }
 
 .desktop-menu {
@@ -207,35 +210,33 @@ header {
   }
 }
 
-
-
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80vh;
+  min-height: 80vh;
+  background-color: var(--vit);
+  padding: 10rem 0;
 }
 
 .evenemang-header {
-  border: 1px solid black;
-  width: 70rem;
+  /* border: 1px solid black; */
+  max-width: 70rem;
   height: 36rem;
   display: flex;
   background-color: #672727;
+  border-radius: 12px;
 }
 
-
-
-.bild13{
+.bild13 {
   width: 100%;
 }
 
-.info-evenemang{
+.info-evenemang {
   margin-left: 2rem;
-  margin-top: 8rem ;
+  margin-top: 8rem;
   font-size: 16px;
-  color: #F4F4F8;
-
+  color: #f4f4f8;
 }
 
 @media (max-width: 768px) {
@@ -250,79 +251,72 @@ header {
   }
 }
 
-
-
-
-
-
-
-
 .evenemang-kort-bild-1 {
-    width:600px;
-    background-color: black;
-    border:none;
-  }
-  .evenemang-kort-main {
+  width: 600px;
+  background-color: black;
+  border: none;
+}
+.evenemang-kort-main {
   background-color: #672727;
-  height:100vh;
-  }
-  .evenemang-kort {
-    margin:auto;
-    border-radius: 12px;
-    background-color: #F4F4F8;
-    max-width:1300px;
-    min-height:500px;
-    padding:2rem;
-    display:flex;
-    flex-direction: row;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.348);
-    }
-    .evenemang-kort-tags {
-      font-weight: 600;
-      position: relative;
-      top: -15px;
-      color: #672727;
-      display:flex;
-      flex-direction: row;
-      justify-content:space-between;
-      }
-    .evenemang-kort-content{
-      color: #AF232C;
-      display:flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-      padding:0 15px 0 35px;
-      width:1000px;
-      }
-      .evenemang-kort-content h2{
-        font-size:2.23rem;
-        letter-spacing: 0px;
-        width:500px;
-        }
-      .evenemang-kort-info {
-        width:370px;
-        text-align: left;
-        font-size:18px;
-        line-height: 28px;
-      }
+  height: 100vh;
+}
+.evenemang-kort {
+  margin: auto;
+  border-radius: 12px;
+  background-color: #f4f4f8;
+  max-width: 1300px;
+  min-height: 500px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.348);
+}
+.evenemang-kort-tags {
+  font-weight: 600;
+  position: relative;
+  top: -15px;
+  color: #672727;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.evenemang-kort-content {
+  color: #af232c;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 0 15px 0 35px;
+  width: 1000px;
+}
+.evenemang-kort-content h2 {
+  font-size: 2.23rem;
+  letter-spacing: 0px;
+  max-width: 500px;
+}
+.evenemang-kort-info {
+  width: 370px;
+  text-align: left;
+  font-size: 18px;
+  line-height: 28px;
+}
 
-    .evenemang-kort button {
-      position: relative;
-      top: 23px;
-      border-radius: 10px;
-      text-decoration: none;
-      font-weight: 600;
-      font-size:16px;
-      color:#F4F4F8;
-      border: none;
-      width:300px;
-      padding:20px;
-      align-self: flex-end;
-      border:1px solid var(--röd);
-      background-color: var(--orange); 
-    }
-    .evenemang-kort button:hover {
-      cursor:pointer;
-      border:1px solid var(--röd);
-      background-color: var(--brun); 
-    }
+.evenemang-kort button {
+  position: relative;
+  top: 23px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  color: #f4f4f8;
+  border: none;
+  width: 300px;
+  padding: 20px;
+  align-self: flex-end;
+  border: 2px solid var(--röd);
+  background-color: var(--orange);
+}
+.evenemang-kort button:hover {
+  cursor: pointer;
+  border: 2px solid var(--röd);
+  background-color: var(--brun);
+}
