@@ -12,48 +12,8 @@ Brun: #672727
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-
 }
 
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
-.evenemang-header {
-  border: 1px solid black;
-  width: 70rem;
-  height: 35rem;
-  display: flex;
-  background-color: #672727;
-}
-
-.bild13{
-  width: 100%;
-  height: auto;
-}
-
-.info-evenemang{
-  margin-left: 2rem;
-  margin-top: 8rem ;
-  font-size: 16px;
-  color: #F4F4F8;
-
-}
-
-@media (max-width: 768px) {
-  .bild13 {
-    width: 80%;
-  }
-}
-
-@media (max-width: 430px) {
-  .bild13 {
-    width: 60%;
-  }
-}
 
 .evenemang-kort-bild-1 {
   width:900px;
@@ -79,6 +39,7 @@ height:100vh;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.348);
 
   }
+
 
   .evenemang-kort-tags {
     position: relative;
@@ -109,6 +70,8 @@ height:100vh;
       font-size:18px;
       line-height: 28px;
     }
+
+
 
   .evenemang-kort .bild-1 {
     background-color: black;
