@@ -220,12 +220,13 @@ header {
 }
 
 .evenemang-header {
-  /* border: 1px solid black; */
   max-width: 70rem;
   height: 36rem;
   display: flex;
   background-color: #672727;
   border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
 }
 
 .bild13 {
