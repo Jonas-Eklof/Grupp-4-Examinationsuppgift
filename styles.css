@@ -1,6 +1,7 @@
 /* Färger 
 
 Vit: #F4F4F8
+Rosa: #FAB0A6
 Orange: #DB7851
 Röd: #AF232C
 Brun: #672727 
@@ -12,3 +13,84 @@ Brun: #672727
   margin: 0;
   padding: 0;
 }
+
+
+.evenemang-kort-bild-1 {
+  width:900px;
+  background-color: black;
+  border:none;
+}
+
+
+.evenemang-kort-main {
+background-color: #672727;
+height:100vh;
+}
+
+.evenemang-kort {
+  margin:auto;
+  border-radius: 12px;
+  background-color: #F4F4F8;
+  max-width:1300px;
+  min-height:500px;
+  padding:2rem;
+  display:flex;
+  flex-direction: row;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.348);
+
+  }
+
+
+  .evenemang-kort-tags {
+    position: relative;
+    top: -15px;
+    color: #672727;
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
+    }
+
+
+  .evenemang-kort-content{
+    color: #AF232C;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding:0 15px 0 35px;
+    width:1000px;
+    }
+
+    .evenemang-kort-content h2{
+      font-size:40px;
+      width:500px;
+      }
+    .evenemang-kort-info {
+      width:330px;
+      text-align: left;
+      font-size:18px;
+      line-height: 28px;
+    }
+
+
+
+  .evenemang-kort .bild-1 {
+    background-color: black;
+    width:300px;
+    height:200px;
+  }
+
+  .evenemang-kort button {
+    position: relative;
+    top: 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size:16px;
+    color:#F4F4F8;
+    border: none;
+    width:300px;
+    padding:20px;
+    align-self: flex-end;
+    border:1px solid #AF232C;
+    background-color: #DB7851;
+  }
