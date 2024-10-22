@@ -13,7 +13,7 @@ Brun: #672727
   --rosa: #fab0a6;
   --orange: #db7851;
   --röd: #af232c;
-  --brun: #762727;
+  --brun: #672727;
 }
 
 * {
@@ -24,6 +24,7 @@ Brun: #672727
 
 body {
   font-family: Inter, Arial, sans-serif;
+  background-color: var(--brun);
 }
 
 #logo {
@@ -321,3 +322,26 @@ header {
   border: 2px solid var(--röd);
   background-color: var(--brun);
 }
+
+/* -------------------------  Böcker kort  ---------------------------- */
+
+.bocker {
+  display: flex;
+}
+
+.bocker-kort {
+  display: flex;
+  min-width: 600px;
+  background-color: var(--vit);
+  margin-inline: auto;
+  margin-bottom: 4rem;
+  border-radius: 12px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.348);
+}
+
+.bocker-kort img {
+  max-height: 250px;
+  padding: 2rem;
+}
+
+/* ------------------------- / Böcker kort  ---------------------------- */
