@@ -230,7 +230,7 @@ header {
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
 }
 
-.bild13 {
+.bild13, .bild {
   width: 100%;
 }
 
@@ -242,13 +242,13 @@ header {
 }
 
 @media (max-width: 768px) {
-  .bild13 {
+  .bild13, .bild {
     width: 80%;
   }
 }
 
 @media (max-width: 430px) {
-  .bild13 {
+  .bild13, .bild {
     width: 60%;
   }
 }
