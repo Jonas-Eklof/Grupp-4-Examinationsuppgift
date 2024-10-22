@@ -337,14 +337,13 @@ header {
   max-width: 40%;
   background-color: var(--vit);
   margin-inline: auto;
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
   border-radius: 12px;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.348);
 }
 
 .bocker-kort img {
-  /* max-width: 250px; */
-  max-width: clamp(100px, 200px, 250px);
+  width: clamp(50px, 150px, 250px);
   padding: 2rem 1rem;
 }
 
@@ -376,6 +375,7 @@ header {
   padding: 1rem 2rem;
   border-radius: 10px;
   border: 2px solid var(--brun);
+  text-align: center;
 }
 
 .order-button:hover {
@@ -404,6 +404,7 @@ header {
 
   .order-button {
     align-self: center;
+    min-width: 50%;
   }
 }
 
