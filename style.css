@@ -351,6 +351,8 @@ header {
 .bocker-info {
   padding: 2rem 1rem;
   color: var(--röd);
+  display: flex;
+  flex-direction: column;
 }
 
 .bok-titel {
@@ -360,6 +362,27 @@ header {
 .genre {
   color: var(--brun);
   margin-bottom: 0.7rem;
+}
+
+.synopsis {
+  margin-bottom: 2rem;
+}
+
+.order-button {
+  align-self: flex-end;
+  min-width: 30%;
+  color: var(--vit);
+  background: var(--orange);
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  border: 2px solid var(--brun);
+}
+
+.order-button:hover {
+  color: var(--vit);
+  background-color: var(--brun);
+  text-decoration: none;
+  border: 2px solid var(--röd);
 }
 
 @media (max-width: 1080px) {
@@ -377,6 +400,10 @@ header {
 
   .bocker-info {
     padding-inline: 1.5rem;
+  }
+
+  .order-button {
+    align-self: center;
   }
 }
 
