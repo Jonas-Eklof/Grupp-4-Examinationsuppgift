@@ -253,7 +253,6 @@ header {
   }
 }
 
-<<<<<<< HEAD
 
 
 
@@ -445,208 +444,50 @@ header {
     
     
     
-=======
-.evenemang-kort-bild-1 {
-  width: 600px;
-  background-color: black;
-  border: none;
-}
-.evenemang-kort-main {
-  background-color: #672727;
-  height: 100vh;
-}
-.evenemang-kort {
-  margin: auto;
-  border-radius: 12px;
-  background-color: #f4f4f8;
-  max-width: 1300px;
-  min-height: 500px;
-  padding: 2rem;
-  display: flex;
-  flex-direction: row;
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.348);
-}
-.evenemang-kort-tags {
-  font-weight: 600;
-  position: relative;
-  top: -15px;
-  color: #672727;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.evenemang-kort-content {
-  color: #af232c;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  padding: 0 15px 0 35px;
-  width: 1000px;
-}
-.evenemang-kort-content h2 {
-  font-size: 2.23rem;
-  letter-spacing: 0px;
-  max-width: 500px;
-}
-.evenemang-kort-info {
-  width: 370px;
-  text-align: left;
-  font-size: 18px;
-  line-height: 28px;
-}
 
-.evenemang-kort button {
-  position: relative;
-  top: 23px;
-  border-radius: 10px;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 16px;
-  color: #f4f4f8;
-  border: none;
-  width: 300px;
-  padding: 20px;
-  align-self: flex-end;
-  border: 2px solid var(--röd);
-  background-color: var(--orange);
-}
-.evenemang-kort button:hover {
-  cursor: pointer;
-  border: 2px solid var(--röd);
-  background-color: var(--brun);
-}
-
-footer {
-  display: flex;
-  justify-content: center;
-  background-color: rgb(233, 232, 232);
-  font-size: small;
-  height: 150px;
-  width: 100%;
-  text-align: center;
-  padding: 10px;
-  position: relative;
-  bottom: 0px;
-  border-top: 2px solid rgb(228, 228, 228);
-}
-.contact {
-  padding-left: 15px;
-  padding-right: 15px;
-}
-.contact a:link {
-  color: black;
-  text-decoration: none;
-}
-.links {
-  padding-left: 15px;
-}
-.links a {
-  color: black;
-  text-decoration: none;
-}
-ul {
-  list-style-type: none;
-}
-.sociala-medier {
-  padding-left: 15px;
-}
-.sociala-medier a {
-  color: black;
-}
-
-@media only screen and (max-width: 545px) {
-  footer {
-    margin-left: -12px;
-    padding: 10px;
-    font-size: 10px;
-    margin-bottom: 20px;
-  }
-}
-
-/* -------------------------  Böcker kort  ---------------------------- */
-
-.bocker {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 10rem;
-  margin-bottom: 10rem;
-}
-
-.bocker-kort {
-  display: flex;
-  max-width: 40%;
-  background-color: var(--vit);
-  margin-inline: auto;
-  margin-bottom: 5rem;
-  border-radius: 12px;
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.348);
-}
-
-.bocker-kort img {
-  width: clamp(50px, 150px, 250px);
-  padding: 2rem 1rem;
-}
-
-.bocker-info {
-  padding: 2rem 1rem;
-  color: var(--röd);
-  display: flex;
-  flex-direction: column;
-}
-
-.bok-titel {
-  margin-bottom: 0.3rem;
-}
-
-.genre {
-  color: var(--brun);
-  margin-bottom: 0.7rem;
-}
-
-.synopsis {
-  margin-bottom: 2rem;
-}
-
-.order-button {
-  align-self: flex-end;
-  min-width: 30%;
-  color: var(--vit);
-  background: var(--orange);
-  padding: 1rem 2rem;
-  border-radius: 10px;
-  border: 2px solid var(--brun);
-  text-align: center;
-}
-
-.order-button:hover {
-  color: var(--vit);
-  background-color: var(--brun);
-  text-decoration: none;
-  border: 2px solid var(--röd);
-}
-
-@media (max-width: 1080px) {
-  .bocker {
-    flex-direction: column;
-  }
-
-  .bocker-kort {
-    flex-direction: column;
-  }
-
-  .bocker-kort img {
-    margin-inline: auto;
-  }
-
-  .bocker-info {
-    padding-inline: 1.5rem;
-  }
-
-  .order-button {
-    align-self: center;
-    min-width: 50%;
-  }
-}
-
-/* ------------------------- / Böcker kort  ---------------------------- */
->>>>>>> main
+    footer {
+      display: flex;
+      justify-content: center;
+      background-color: rgb(233, 232, 232);
+      font-size: small;
+      height: 150px;
+      width: 100%;
+      text-align: center;
+      padding: 10px;
+      position: relative;
+      bottom: 0px;
+      border-top: 2px solid rgb(228, 228, 228);
+    }
+    .contact {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    .contact a:link {
+      color: black;
+      text-decoration: none;
+    }
+    .links {
+      padding-left: 15px;
+    }
+    .links a {
+      color: black;
+      text-decoration: none;
+    }
+    ul {
+      list-style-type: none;
+    }
+    .sociala-medier {
+      padding-left: 15px;
+    }
+    .sociala-medier a {
+      color: black;
+    }
+    
+    @media only screen and (max-width: 545px) {
+      footer {
+        margin-left: -12px;
+        padding: 10px;
+        font-size: 10px;
+        margin-bottom: 20px;
+      }
+    }
