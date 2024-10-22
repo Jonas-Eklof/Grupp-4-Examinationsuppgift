@@ -491,3 +491,90 @@ header {
         margin-bottom: 20px;
       }
     }
+
+/* -------------------------  Böcker kort  ---------------------------- */
+
+.bocker {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+
+.bocker-kort {
+  display: flex;
+  max-width: 40%;
+  background-color: var(--vit);
+  margin-inline: auto;
+  margin-bottom: 5rem;
+  border-radius: 12px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.348);
+}
+
+.bocker-kort img {
+  width: clamp(50px, 150px, 250px);
+  padding: 2rem 1rem;
+}
+
+.bocker-info {
+  padding: 2rem 1rem;
+  color: var(--röd);
+  display: flex;
+  flex-direction: column;
+}
+
+.bok-titel {
+  margin-bottom: 0.3rem;
+}
+
+.genre {
+  color: var(--brun);
+  margin-bottom: 0.7rem;
+}
+
+.synopsis {
+  margin-bottom: 2rem;
+}
+
+.order-button {
+  align-self: flex-end;
+  min-width: 30%;
+  color: var(--vit);
+  background: var(--orange);
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  border: 2px solid var(--brun);
+  text-align: center;
+}
+
+.order-button:hover {
+  color: var(--vit);
+  background-color: var(--brun);
+  text-decoration: none;
+  border: 2px solid var(--röd);
+}
+
+@media (max-width: 1080px) {
+  .bocker {
+    flex-direction: column;
+  }
+
+  .bocker-kort {
+    flex-direction: column;
+  }
+
+  .bocker-kort img {
+    margin-inline: auto;
+  }
+
+  .bocker-info {
+    padding-inline: 1.5rem;
+  }
+
+  .order-button {
+    align-self: center;
+    min-width: 50%;
+  }
+}
+
+/* ------------------------- slut Böcker kort  ---------------------------- */
