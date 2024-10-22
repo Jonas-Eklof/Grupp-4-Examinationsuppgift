@@ -253,6 +253,199 @@ header {
   }
 }
 
+<<<<<<< HEAD
+
+
+
+
+
+
+
+.evenemang-kort-main {
+  background-color: #672727;
+  height:auto;
+  display:flex;
+  flex-wrap: wrap;
+  padding-top:6vh;
+  padding-bottom:8vh;
+  }
+
+.evenemang-kort-bild-1 {
+    max-width:55%;
+    height:auto;
+    background-color: black;
+    border:none;
+    align-self: center;
+    margin-left:-1vh;
+  }
+
+  .evenemang-kort {
+    margin:auto;
+    border-radius: 12px;
+    background-color: #F4F4F8;
+    max-width:clamp(80vw, 60vw, 1500px);
+    max-height:60vh;
+    padding:2rem;
+    margin-bottom: 4vh;
+    display:flex;
+    flex-direction: row;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.348);
+    }
+    /* Evenemangskort större skärm */
+    @media (min-width: 1500px) {
+      .evenemang-kort {
+        max-width:60vw;
+        }
+      }
+
+    .evenemang-kort-tags {
+      font-size:clamp(0.9rem, 3vh, 1rem);
+      font-weight: 600;
+      position: relative;
+      margin-top: -4vh;
+      color: #672727;
+      display:flex;
+      flex-direction: row;
+      justify-content:space-between;
+      }
+    .evenemang-kort-content{
+      color: #AF232C;
+      display:flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      padding:0 1.5rem 0 2rem;
+      }
+
+
+      .evenemang-kort-content h2{
+        font-size:clamp(1.5rem, 5vh, 1.9rem);
+        width:90%;
+        letter-spacing: 0px;
+        }
+        @media (min-width: 1500px) {
+          .evenemang-kort-content h2 {
+            width:100%;
+            }
+          }
+    
+      .evenemang-kort-info {
+        width:75%;
+        text-align: left;
+        font-size:clamp(0.9rem, 3vh, 1.1rem);
+        line-height: clamp(1.3rem, 4vh, 1.6rem);
+      }
+
+    .evenemang-kort button {
+      position: relative;
+      top: 2.8vh;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size:clamp(0.9rem, 1vh, 1.1rem);
+      color:#F4F4F8;
+      border: none;
+      width:37vh;
+      padding:2.3vh;
+      align-self: flex-end;
+      border:1px solid var(--röd);
+      background-color: var(--orange); 
+    }
+    .evenemang-kort button:hover {
+      cursor:pointer;
+      border:1px solid var(--röd);
+      background-color: var(--brun); 
+    }
+
+
+    
+   /* Evenemangskort mobil */
+    @media (max-width: 430px) {
+        .evenemang-kort-bild-1 {
+        margin-left:0vh;
+          max-width:100%;
+          height:auto;
+          background-color: black;
+          border:none;
+          align-self: flex-start;
+        }
+        .evenemang-kort-bild-1-variation {
+          margin-top:8vh;
+          margin-left:0vh;
+            max-width:100%;
+            height:auto;
+            background-color: black;
+            border:none;
+            align-self: flex-end;
+          }
+        .evenemang-kort {
+          margin:auto;
+          border-radius: 12px;
+          background-color: #F4F4F8;
+          max-width:92vw;
+          max-height:92vh;
+          margin-bottom:2vh;
+          padding:1rem;
+          padding-bottom:10vh;
+          display:flex;
+          flex-direction: column;
+          box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.348);
+          }
+          .evenemang-kort-tags {
+            font-size:clamp(0.8rem, 3vh, 1rem);
+            font-weight: 600;
+            position: relative;
+            margin-top: 2vh;
+            color: #672727;
+            display:flex;
+            flex-direction: row;
+            justify-content:space-between;
+            }
+          .evenemang-kort-content{
+            color: #AF232C;
+            display:flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            padding:0 1.1rem 0 1rem;
+            }
+            .evenemang-kort-content h2{
+              margin-top:4vh;
+              top:2vh;
+              font-size:clamp(1.2rem, 4vh, 1.5rem);
+              letter-spacing: 0px;
+              width:clamp(1rem, 45vh, 19rem);
+              }
+            .evenemang-kort-info {
+              width:100%;
+              margin-top: 2.2vh;
+              text-align: left;
+              font-size:clamp(0.9rem, 3vh, 1rem);
+              line-height: clamp(1.3rem, 3.6vh, 1.5rem);
+            }
+          .evenemang-kort button {
+            position: relative;
+            top: 5vh;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size:clamp(1rem, 1vh, 1.1rem);
+            color:#F4F4F8;
+            border: none;
+            width:100%;
+            padding:2.4vh;
+            align-self: center;
+            border:1px solid var(--röd);
+            background-color: var(--orange); 
+          }
+          .evenemang-kort button:hover {
+            cursor:pointer;
+            border:1px solid var(--röd);
+            background-color: var(--brun); 
+          }
+    }
+    
+    
+    
+=======
 .evenemang-kort-bild-1 {
   width: 600px;
   background-color: black;
@@ -323,25 +516,137 @@ header {
   background-color: var(--brun);
 }
 
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(233, 232, 232);
+  font-size: small;
+  height: 150px;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  bottom: 0px;
+  border-top: 2px solid rgb(228, 228, 228);
+}
+.contact {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.contact a:link {
+  color: black;
+  text-decoration: none;
+}
+.links {
+  padding-left: 15px;
+}
+.links a {
+  color: black;
+  text-decoration: none;
+}
+ul {
+  list-style-type: none;
+}
+.sociala-medier {
+  padding-left: 15px;
+}
+.sociala-medier a {
+  color: black;
+}
+
+@media only screen and (max-width: 545px) {
+  footer {
+    margin-left: -12px;
+    padding: 10px;
+    font-size: 10px;
+    margin-bottom: 20px;
+  }
+}
+
 /* -------------------------  Böcker kort  ---------------------------- */
 
 .bocker {
   display: flex;
+  flex-wrap: wrap;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
 }
 
 .bocker-kort {
   display: flex;
-  min-width: 600px;
+  max-width: 40%;
   background-color: var(--vit);
   margin-inline: auto;
-  margin-bottom: 4rem;
+  margin-bottom: 5rem;
   border-radius: 12px;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.348);
 }
 
 .bocker-kort img {
-  max-height: 250px;
-  padding: 2rem;
+  width: clamp(50px, 150px, 250px);
+  padding: 2rem 1rem;
+}
+
+.bocker-info {
+  padding: 2rem 1rem;
+  color: var(--röd);
+  display: flex;
+  flex-direction: column;
+}
+
+.bok-titel {
+  margin-bottom: 0.3rem;
+}
+
+.genre {
+  color: var(--brun);
+  margin-bottom: 0.7rem;
+}
+
+.synopsis {
+  margin-bottom: 2rem;
+}
+
+.order-button {
+  align-self: flex-end;
+  min-width: 30%;
+  color: var(--vit);
+  background: var(--orange);
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  border: 2px solid var(--brun);
+  text-align: center;
+}
+
+.order-button:hover {
+  color: var(--vit);
+  background-color: var(--brun);
+  text-decoration: none;
+  border: 2px solid var(--röd);
+}
+
+@media (max-width: 1080px) {
+  .bocker {
+    flex-direction: column;
+  }
+
+  .bocker-kort {
+    flex-direction: column;
+  }
+
+  .bocker-kort img {
+    margin-inline: auto;
+  }
+
+  .bocker-info {
+    padding-inline: 1.5rem;
+  }
+
+  .order-button {
+    align-self: center;
+    min-width: 50%;
+  }
 }
 
 /* ------------------------- / Böcker kort  ---------------------------- */
+>>>>>>> main
