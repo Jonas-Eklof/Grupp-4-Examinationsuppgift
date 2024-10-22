@@ -327,15 +327,18 @@ header {
 
 .bocker {
   display: flex;
+  flex-wrap: wrap;
   margin-top: 10rem;
   margin-bottom: 10rem;
 }
 
 .bocker-kort {
   display: flex;
-  min-width: 40%;
+  /* min-width: 40%; */
+  max-width: 40%;
   background-color: var(--vit);
-  margin-inline: auto;
+  margin-inline: 3rem;
+  margin-bottom: 3rem;
   border-radius: 12px;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.348);
 }
@@ -347,6 +350,7 @@ header {
 
 .bocker-info {
   padding: 2rem 1rem;
+  color: var(--röd);
 }
 
 /* ------------------------- / Böcker kort  ---------------------------- */
