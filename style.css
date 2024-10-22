@@ -334,10 +334,9 @@ header {
 
 .bocker-kort {
   display: flex;
-  /* min-width: 40%; */
   max-width: 40%;
   background-color: var(--vit);
-  margin-inline: 3rem;
+  margin-inline: auto;
   margin-bottom: 3rem;
   border-radius: 12px;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.348);
@@ -351,6 +350,15 @@ header {
 .bocker-info {
   padding: 2rem 1rem;
   color: var(--röd);
+}
+
+.bok-titel {
+  margin-bottom: 0.3rem;
+}
+
+.genre {
+  color: var(--brun);
+  margin-bottom: 0.7rem;
 }
 
 /* ------------------------- / Böcker kort  ---------------------------- */
