@@ -456,6 +456,7 @@ header {
 
    /*  Startsidan CSS */
    .start-container {
+    background-color: var(--vit);
     display: flex;
   }
 
