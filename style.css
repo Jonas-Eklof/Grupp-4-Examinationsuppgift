@@ -386,6 +386,13 @@ ul {
         font-size:clamp(0.9rem, 3vh, 1.1rem);
         line-height: clamp(1.3rem, 4vh, 1.6rem);
       }
+      .evenemang-kort-bild-1-variation {
+          width:55%;
+          height:auto;
+          background-color: black;
+          border:none;
+          align-self: flex-end;
+        }
 
     .evenemang-kort button {
       position: relative;
@@ -421,8 +428,8 @@ ul {
           align-self: flex-start;
         }
         .evenemang-kort-bild-1-variation {
-          margin-top:8vh;
-          margin-left:0vh;
+            margin-top:8vh;
+            margin-left:0vh;
             max-width:100%;
             height:auto;
             background-color: black;
