@@ -1167,7 +1167,21 @@ ul {
     .sociala-medier a {
       color: black;
     }
-    
+    footer .links a:hover{
+      color:blue
+  
+      }
+      footer .sociala-medier a:hover{
+      color:blue  
+  
+      }
+      footer .contact a:hover{
+      color:blue
+      }
+    .copywright{
+      color: black;
+      margin-top: 100px;
+      }
     @media only screen and (max-width: 545px) {
       footer {
         margin-left: -12px;
