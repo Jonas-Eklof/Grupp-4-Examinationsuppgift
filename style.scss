@@ -1,10 +1,965 @@
-@import '_variables.scss';
-@import '_mixins.scss';
-@import '_header.scss';
-@import '_footer.scss';
+@import "_variables.scss";
+@import "_mixins.scss";
+@import "_header.scss";
+@import "_footer.scss";
 
 * {
-    box-sizing: border-box;
-    margin:0;
-    padding:0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
+
+body {
+  font-family: Inter, Arial, sans-serif;
+  background-color: var(--brun);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  background-color: $vit;
+  padding: 10rem 0;
+}
+
+.evenemang-header {
+  max-width: 70rem;
+  height: 36rem;
+  display: flex;
+  background-color: $brun;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+
+  .bild13,
+  .bild {
+    width: 100%;
+  }
+
+  .info-evenemang {
+    margin-left: 2rem;
+    margin-top: 8rem;
+    margin-right: 1rem;
+    font-size: 16px;
+    color: $vit;
+
+    h1 {
+      font-size: 2rem;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .evenemang-header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 80%;
+  }
+
+  .info-evenemang {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .bild13,
+  .bild {
+    width: 80%;
+  }
+}
+
+@media (max-width: 430px) {
+  .bild13,
+  .bild {
+    width: 60%;
+  }
+}
+
+.evenemang-kort-main {
+  background-color: $brun;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 6vh;
+  padding-bottom: 8vh;
+}
+
+.evenemang-kort-bild-1 {
+  max-width: 55%;
+  height: auto;
+  background-color: black;
+  border: none;
+  align-self: center;
+  margin-left: -1vh;
+}
+
+.evenemang-kort {
+  margin: auto;
+  border-radius: 12px;
+  background-color: $vit;
+  max-width: clamp(80vw, 60vw, 1500px);
+  max-height: 60vh;
+  padding: 2rem;
+  margin-bottom: 4vh;
+  display: flex;
+  flex-direction: row;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.348);
+
+  /* Evenemangskort större skärm */
+  @media (min-width: 1500px) {
+    max-width: 60vw;
+  }
+}
+
+.evenemang-kort-tags {
+  font-size: clamp(0.9rem, 3vh, 1rem);
+  font-weight: 600;
+  position: relative;
+  margin-top: -4vh;
+  color: $brun;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.evenemang-kort-content {
+  color: $röd;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 0 1.5rem 0 2rem;
+}
+
+.evenemang-kort-content {
+  h2 {
+    font-size: clamp(1.5rem, 5vh, 1.9rem);
+    width: 90%;
+    letter-spacing: 0px;
+  }
+
+  @media (min-width: 1500px) {
+    h2 {
+      width: 100%;
+    }
+  }
+}
+
+.evenemang-kort-info {
+  width: 75%;
+  text-align: left;
+  font-size: clamp(0.9rem, 3vh, 1.1rem);
+  line-height: clamp(1.3rem, 4vh, 1.6rem);
+}
+
+.evenemang-kort-bild-1-variation {
+  width: 55%;
+  height: auto;
+  background-color: black;
+  border: none;
+  align-self: flex-end;
+}
+
+.evenemang-kort {
+  button {
+    position: relative;
+    top: 2.8vh;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: clamp(0.9rem, 1vh, 1.1rem);
+    color: $vit;
+    border: none;
+    width: 37vh;
+    padding: 2.3vh;
+    align-self: flex-end;
+    border: 1px solid $röd;
+    background-color: $orange;
+
+    &:hover {
+      cursor: pointer;
+      border: 1px solid $röd;
+      background-color: $brun;
+    }
+  }
+}
+
+@media (max-width: 1080px) {
+  .evenemang-kort-bild-1 {
+    margin-left: 0vh;
+    max-width: 100%;
+    height: auto;
+    background-color: black;
+    border: none;
+    align-self: flex-start;
+  }
+
+  .evenemang-kort-bild-1-variation {
+    margin-top: 8vh;
+    margin-left: 0vh;
+    max-width: 100%;
+    height: auto;
+    background-color: black;
+    border: none;
+    align-self: flex-end;
+  }
+
+  .evenemang-kort img {
+    align-self: center;
+    max-width: 100%;
+  }
+
+  .evenemang-kort {
+    margin: auto;
+    border-radius: 12px;
+    background-color: $vit;
+    max-width: 92vw;
+    max-height: 92vh;
+    margin-bottom: 2vh;
+    padding: 1rem;
+    padding-bottom: 10vh;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.348);
+
+    &:nth-child(2) {
+      flex-direction: column-reverse;
+    }
+  }
+
+  .evenemang-kort-tags {
+    font-size: clamp(0.8rem, 3vh, 1rem);
+    font-weight: 600;
+    position: relative;
+    margin-top: 2vh;
+    color: $brun;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .evenemang-kort-content {
+    color: $röd;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0 1.1rem 0 1rem;
+
+    h2 {
+      margin-top: 4vh;
+      top: 2vh;
+      font-size: clamp(1.2rem, 4vh, 1.5rem);
+      letter-spacing: 0px;
+      width: clamp(1rem, 45vh, 19rem);
+    }
+  }
+
+  .evenemang-kort-info {
+    width: 100%;
+    margin-top: 2.2vh;
+    text-align: left;
+    font-size: clamp(0.9rem, 3vh, 1rem);
+    line-height: clamp(1.3rem, 3.6vh, 1.5rem);
+  }
+
+  .evenemang-kort {
+    button {
+      position: relative;
+      top: 5vh;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: clamp(1rem, 1vh, 1.1rem);
+      color: $vit;
+      border: none;
+      width: 100%;
+      padding: 2.4vh;
+      align-self: center;
+      border: 1px solid $röd;
+      background-color: $orange;
+
+      &:hover {
+        cursor: pointer;
+        border: 1px solid $röd;
+        background-color: $brun;
+      }
+    }
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.start-container {
+  background-color: $vit;
+  display: flex;
+}
+
+.start-header {
+  background-image: url(img/start-main-header-bild2.jpg);
+  background-size: cover;
+  top: 5vh;
+  position: relative;
+  margin: auto;
+  border-radius: 15px;
+  width: 70vw;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.206);
+
+  h3 {
+    color: $vit;
+    font-size: 3.1rem;
+    padding: 0 0 0 5vh;
+  }
+
+  p {
+    font-size: 1.3rem;
+    padding: 0 0 0 1vh;
+    margin-left: 40px;
+  }
+
+  @media (min-width: 1500px) {
+    h3 {
+      color: $vit;
+      font-size: 4rem;
+      padding: 0 0 0 5vh;
+    }
+
+    h2 {
+      color: $rosa;
+      font-size: 1.5rem;
+      font-weight: 500;
+      padding: 0 0 0 5vh;
+    }
+
+    .start-main-header-button {
+      position: relative;
+      top: 5vh;
+      left: 5vh;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: clamp(1rem, 1vh, 1.1rem);
+      color: $vit;
+      border: none;
+      width: 15%;
+      padding: 2.1vh;
+      border: 1px solid $röd;
+      background-color: $orange;
+    }
+  }
+}
+
+.start-main {
+  top: 3vh;
+  position: relative;
+  width: 80%;
+  height: auto;
+}
+
+.start-main-header-button {
+  position: relative;
+  top: 5vh;
+  left: 5vh;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: clamp(1rem, 1vh, 1.1rem);
+  color: $vit;
+  border: none;
+  width: 20%;
+  padding: 2.1vh;
+  border: 1px solid $röd;
+  background-color: $orange;
+
+  &:hover {
+    cursor: pointer;
+    border: 1px solid $röd;
+    background-color: $brun;
+  }
+}
+
+.start-aside {
+  overflow: auto;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 25%;
+  height: 83vh;
+
+  @media (min-width: 1500px) {
+    width: 20%;
+    height: 83vh;
+  }
+
+  h2 {
+    font-weight: 900;
+    color: $brun;
+    position: relative;
+    top: 5vh;
+    text-align: center;
+  }
+
+  button {
+    padding: 1vh 2vh;
+    border: none;
+    background-color: $orange;
+    color: $vit;
+    border-radius: 5px;
+    width: 8.5vw;
+
+    &:hover {
+      background-color: $brun;
+      cursor: pointer;
+    }
+
+    @media (min-width: 1500px) {
+      width: 6.5vw;
+    }
+  }
+}
+
+.start-bok-1 {
+  color: $röd;
+  position: relative;
+  top: 5vh;
+  display: flex;
+  flex-direction: row;
+  padding: 2vh;
+}
+
+.start-bok-1-text {
+  top: 2vh;
+  line-height: 2.1vh;
+  color: $brun;
+  position: relative;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  padding: 0 3vh;
+
+  h3 {
+    color: $röd;
+    margin-bottom: 1vh;
+  }
+}
+
+.start-aside-bok-bild {
+  top: 1vh;
+  position: relative;
+  width: 14vh;
+  align-self: flex-end;
+  box-shadow: 3px 3px 0px black;
+  margin-right: 3vh;
+}
+
+.start-main-section-1 {
+  overflow: hidden;
+  top: 10vh;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.258);
+  border-radius: 15px;
+  position: relative;
+  margin: auto;
+  text-align: left;
+  width: 70vw;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+
+  .start-main-section-1-h1-p {
+    flex-direction: column;
+    padding: 3vh;
+  }
+
+  h1 {
+    color: $röd;
+    align-self: center;
+    font-size: 1.9rem;
+    padding: 0 2vh 0 5vh;
+    width: 100%;
+  }
+
+  @media (min-width: 1500px) {
+    h1 {
+      color: $röd;
+      align-self: center;
+      font-size: 2.5rem;
+      padding: 0 5vh 0 5vh;
+      width: 100%;
+    }
+  }
+
+  p {
+    width: 95%;
+    color: $röd;
+    font-size: 1rem;
+    padding: 0 5vh 0 5vh;
+  }
+
+  @media (min-width: 1500px) {
+    p {
+      width: 90%;
+      color: $röd;
+      font-size: 1.2rem;
+      padding: 0 5vh 0 5vh;
+    }
+  }
+
+  .start-main-section-1-bild-1 {
+    flex-direction: row;
+    width: 74vh;
+    height: auto;
+  }
+
+  .start-main-section-1-button {
+    position: relative;
+    top: 5vh;
+    left: 5vh;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: clamp(1rem, 1vh, 1.1rem);
+    color: $vit;
+    border: none;
+    width: 50%;
+    padding: 2.1vh;
+    border: 1px solid $röd;
+    background-color: $orange;
+
+    @media (min-width: 1500px) {
+      width: 35%;
+    }
+
+    &:hover {
+      cursor: pointer;
+      border: 1px solid $röd;
+      background-color: $brun;
+    }
+  }
+}
+
+.start-main-section-2 {
+  top: 30vh;
+  position: relative;
+  margin: auto;
+  text-align: center;
+  width: 70vw;
+  height: 55vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 20vh;
+
+  h2 {
+    color: $röd;
+    font-size: 2.5rem;
+    padding: 0 0 0 5vh;
+  }
+
+  p {
+    width: 50%;
+    line-height: 3.7vh;
+    color: $röd;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 0 0 0 8vh;
+  }
+
+  @media (min-width: 1500px) {
+    h1 {
+      color: $röd;
+      font-size: 3.5rem;
+      padding: 0 0 0 5vh;
+    }
+
+    p {
+      width: 50%;
+      line-height: 3.7vh;
+      color: $röd;
+      font-size: 1.3rem;
+      font-weight: 500;
+      padding: 0 0 0 8vh;
+    }
+  }
+}
+
+.start-main-section-2-linebreak {
+  margin: 1vh;
+  max-width: 10vh;
+  height: 1vh;
+  background-color: $orange;
+}
+
+.start-main-section-3 {
+  background-color: $brun;
+  color: $vit;
+  position: relative;
+  margin: auto;
+  text-align: center;
+  width: 70vw;
+  height: 120vh;
+  padding-bottom: 50vh;
+
+  .startsida-main-kort {
+    top: 13vh;
+    background-color: $vit;
+    color: $orange;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.248);
+    position: relative;
+    text-align: center;
+    margin: auto;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    padding: 10vh;
+  }
+
+  p {
+    padding: 0 7vh 0 7vh;
+    color: $röd;
+  }
+
+  @media (min-width: 1500px) {
+    .startsida-main-kort {
+      top: 13vh;
+      background-color: $vit;
+      color: $orange;
+      border-radius: 10px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.248);
+      position: relative;
+      text-align: center;
+      margin: auto;
+      width: 40vw;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      padding: 10vh;
+    }
+  }
+}
+
+.startsidan-main-sida-logo {
+  width: 50vh;
+  height: auto;
+  align-self: center;
+  filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.396));
+}
+
+/* Startsidan responsiv */
+@media only screen and (max-width: 545px) {
+  .start-aside {
+    display: none;
+  }
+
+  .start_main {
+    top: 3vh;
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+
+  .startsidan-main-sida-logo {
+    padding-top: 5vh;
+    width: 30vh;
+    height: auto;
+    align-self: center;
+    filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.396));
+  }
+
+  .start-header {
+    background-size: cover;
+    position: relative;
+    margin: auto;
+    border-radius: 15px;
+    width: 95vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.206);
+
+    h3 {
+      color: $vit;
+      font-size: 2.2rem;
+      padding: 0 0 0 5vh;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+      font-weight: 500;
+      padding: 0 5vh 0 5vh;
+    }
+
+    p {
+      font-size: 1.2rem;
+      font-weight: 500;
+      padding: 0 5vh 0 0vh;
+    }
+  }
+}
+
+.start-main-section-2 {
+  top: 30vh;
+  position: relative;
+  margin: auto;
+  text-align: center;
+  width: 70vw;
+  height: 55vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 20vh;
+
+  h2 {
+    color: $röd;
+    font-size: 2.5rem;
+    padding: 0 0 0 5vh;
+  }
+
+  p {
+    width: 50%;
+    line-height: 3.7vh;
+    color: $röd;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 0 0 0 8vh;
+  }
+
+  @media (min-width: 1500px) {
+    h1 {
+      color: $röd;
+      font-size: 3.5rem;
+      padding: 0 0 0 5vh;
+    }
+
+    p {
+      width: 50%;
+      line-height: 3.7vh;
+      color: $röd;
+      font-size: 1.3rem;
+      font-weight: 500;
+      padding: 0 0 0 8vh;
+    }
+  }
+}
+
+.start-main-section-2-linebreak {
+  margin: 1vh;
+  max-width: 10vh;
+  height: 1vh;
+  background-color: $orange;
+}
+
+.start-main-section-3 {
+  background-color: $brun;
+  color: $vit;
+  position: relative;
+  margin: auto;
+  text-align: center;
+  width: 70vw;
+  height: 120vh;
+  padding-bottom: 50vh;
+
+  .startsida-main-kort {
+    top: 13vh;
+    background-color: $vit;
+    color: $orange;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.248);
+    position: relative;
+    text-align: center;
+    margin: auto;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    padding: 10vh;
+  }
+
+  p {
+    padding: 0 7vh 0 7vh;
+    color: $röd;
+  }
+
+  @media (min-width: 1500px) {
+    .startsida-main-kort {
+      top: 13vh;
+      background-color: $vit;
+      color: $orange;
+      border-radius: 10px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.248);
+      position: relative;
+      text-align: center;
+      margin: auto;
+      width: 40vw;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      padding: 10vh;
+    }
+  }
+}
+
+.startsidan-main-sida-logo {
+  width: 50vh;
+  height: auto;
+  align-self: center;
+  filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.396));
+}
+
+/* Startsidan responsiv */
+@media only screen and (max-width: 545px) {
+  .start-aside {
+    display: none;
+  }
+
+  .start_main {
+    top: 3vh;
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+
+  .startsidan-main-sida-logo {
+    padding-top: 5vh;
+    width: 30vh;
+    height: auto;
+    align-self: center;
+    filter: drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.396));
+  }
+
+  .start-header {
+    background-size: cover;
+    position: relative;
+    margin: auto;
+    border-radius: 15px;
+    width: 95vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.206);
+
+    h3 {
+      color: $vit;
+      font-size: 2.2rem;
+      padding: 0 0 0 5vh;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+      font-weight: 500;
+      padding: 0 5vh 0 5vh;
+    }
+
+    p {
+      font-size: 1.2rem;
+      font-weight: 500;
+      padding: 0 5vh 0 0vh;
+    }
+  }
+}
+
+/* -------------------------  Böcker kort  ---------------------------- */
+
+.bocker {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+
+  .bocker-kort {
+    display: flex;
+    max-width: 40%;
+    background-color: var(--vit);
+    margin-inline: auto;
+    margin-bottom: 5rem;
+    border-radius: 12px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.348);
+
+    figure {
+      margin-inline: auto;
+    }
+
+    img {
+      width: clamp(50px, 150px, 250px);
+      padding: 2rem 1rem;
+    }
+
+    .bocker-info {
+      padding: 2rem 1rem;
+      color: var(--röd);
+      display: flex;
+      flex-direction: column;
+
+      .bok-titel {
+        margin-bottom: 0.3rem;
+      }
+
+      .genre {
+        color: var(--brun);
+        margin-bottom: 0.7rem;
+      }
+
+      .synopsis {
+        margin-bottom: 2rem;
+      }
+
+      .order-button {
+        align-self: flex-end;
+        min-width: 30%;
+        color: var(--vit);
+        background: var(--orange);
+        padding: 1rem 2rem;
+        border-radius: 10px;
+        border: 2px solid var(--brun);
+        text-align: center;
+
+        &:hover {
+          color: var(--vit);
+          background-color: var(--brun);
+          text-decoration: none;
+          border: 2px solid var(--röd);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1080px) {
+  .bocker {
+    flex-direction: column;
+  }
+
+  .bocker-kort {
+    flex-direction: column;
+
+    img {
+      margin-inline: auto;
+    }
+
+    .bocker-info {
+      padding-inline: 1.5rem;
+    }
+
+    .order-button {
+      align-self: center;
+      min-width: 50%;
+    }
+  }
+}
+
+/* ------------------------- slut Böcker kort  ---------------------------- */
