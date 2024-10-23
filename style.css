@@ -243,11 +243,29 @@ header {
 .info-evenemang {
   margin-left: 2rem;
   margin-top: 8rem;
+  margin-right: 1rem;
   font-size: 16px;
   color: #f4f4f8;
 }
 
+.info-evenemang h1 {
+    font-size: 2rem;
+  }
+
 @media (max-width: 768px) {
+
+  .evenemang-header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 80%;
+  }
+
+  .info-evenemang {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+
   .bild13,
   .bild {
     width: 80%;
