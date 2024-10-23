@@ -14,7 +14,7 @@ Projektet är skapat i Github.
 
 ### Under huven:
 * SEO
-* META-TAGGAR
+* Meta-Taggar
 * Felsökning och kodvalidering
 
 
