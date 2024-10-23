@@ -31,13 +31,13 @@ body {
   max-width: 120px;
 }
 
-header {
+.main-header {
   background-color: var(--vit);
   display: flex;
   justify-content: space-between;
   align-items: center;
   max-height: 123px;
-  padding: 2rem 3rem;
+  padding: 2rem 10%;
   box-shadow: 0 6px 13px 7px #7627273e;
   position: relative;
   z-index: 1;
@@ -177,6 +177,11 @@ header {
 
 /* Media query for mobile */
 @media (max-width: 1080px) {
+
+  .main-header {
+    padding: 2rem;
+  }
+
   .desktop-menu {
     display: none;
   }
