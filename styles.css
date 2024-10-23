@@ -163,8 +163,8 @@
 }
 .all {
   background-color: #fab0a6;
-  width: 1500px;
-  margin-left: 200px;
+  margin-inline: auto;
+  max-width: 1500px;
   border-left: solid #f9c1b9 4px;
   border-right: solid #f9c1b9 4px;
 }
@@ -562,7 +562,7 @@ ul {
 
 body {
   font-family: Inter, Arial, sans-serif;
-  background-color: var(--brun);
+  background-color: #672727;
 }
 
 .container {
@@ -1225,7 +1225,7 @@ body {
 .bocker .bocker-kort {
   display: flex;
   max-width: 40%;
-  background-color: var(--vit);
+  background-color: #f4f4f8;
   margin-inline: auto;
   margin-bottom: 5rem;
   border-radius: 12px;
@@ -1240,7 +1240,7 @@ body {
 }
 .bocker .bocker-kort .bocker-info {
   padding: 2rem 1rem;
-  color: var(--röd);
+  color: #af232c;
   display: flex;
   flex-direction: column;
 }
@@ -1248,7 +1248,7 @@ body {
   margin-bottom: 0.3rem;
 }
 .bocker .bocker-kort .bocker-info .genre {
-  color: var(--brun);
+  color: #672727;
   margin-bottom: 0.7rem;
 }
 .bocker .bocker-kort .bocker-info .synopsis {
@@ -1257,18 +1257,18 @@ body {
 .bocker .bocker-kort .bocker-info .order-button {
   align-self: flex-end;
   min-width: 30%;
-  color: var(--vit);
-  background: var(--orange);
+  color: #f4f4f8;
+  background: #db7851;
   padding: 1rem 2rem;
   border-radius: 10px;
-  border: 2px solid var(--brun);
+  border: 2px solid #672727;
   text-align: center;
 }
 .bocker .bocker-kort .bocker-info .order-button:hover {
-  color: var(--vit);
-  background-color: var(--brun);
+  color: #f4f4f8;
+  background-color: #672727;
   text-decoration: none;
-  border: 2px solid var(--röd);
+  border: 2px solid #af232c;
 }
 
 @media (max-width: 1080px) {
@@ -1284,7 +1284,7 @@ body {
   .bocker-kort .bocker-info {
     padding-inline: 1.5rem;
   }
-  .bocker-kort .order-button {
+  .bocker .bocker-kort .bocker-info .order-button {
     align-self: center;
     min-width: 50%;
   }
