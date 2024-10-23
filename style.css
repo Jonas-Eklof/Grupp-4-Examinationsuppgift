@@ -884,6 +884,7 @@ ul {
 
 
  /* Startsidan responsiv */
+ 
   @media only screen and (max-width: 545px) {
   .start-aside{
     display:none;
@@ -893,6 +894,13 @@ ul {
     position: relative;
     width:100%;
     height:auto;
+  }
+  .startsidan-main-sida-logo {
+    padding-top:5vh;
+    width:30vh;
+    height:auto;
+    align-self: center;
+    filter:drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.396));
   }
 
 
@@ -1015,6 +1023,7 @@ ul {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    margin-bottom:5vh;
   }
   .start-main-section-2 h1 {
     color: var(--röd);
