@@ -609,14 +609,14 @@ header {
   }
   .start-main-section-1-h1-p {
     flex-direction: column;
-    padding:5vh;
+    padding:3vh;
   }
   .start-main-section-1 h1 {
     color: var(--röd);
     align-self: center;
     font-size: 2.5rem;
     padding:0 5vh 0 5vh;
-    width:90%;
+    width:100%;
   }
   .start-main-section-1 p {
     width:90%;
@@ -627,7 +627,7 @@ header {
 
   .start-main-section-1-bild-1 {
     flex-direction: row;
-    width:50%;
+    width:74vh;
     height:auto;
   }
   .start-main-section-1-button {
