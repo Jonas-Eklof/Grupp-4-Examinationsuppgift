@@ -368,7 +368,6 @@ ul {
   color: black;
 }
 
-<<<<<<< Updated upstream
 
       .evenemang-kort-content h2{
         font-size:clamp(1.5rem, 5vh, 1.9rem);
@@ -1028,7 +1027,6 @@ ul {
         margin-bottom: 20px;
       }
     }
-=======
 @media only screen and (max-width: 545px) {
   footer {
     margin-left: -12px;
@@ -1037,7 +1035,6 @@ ul {
     margin-bottom: 20px;
   }
 }
->>>>>>> Stashed changes
 
 /* -------------------------  Böcker kort  ---------------------------- */
 
