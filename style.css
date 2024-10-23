@@ -322,7 +322,53 @@ header {
       justify-content: space-evenly;
       padding:0 1.5rem 0 2rem;
       }
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: #f4f4f8;
+  font-size: small;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  bottom: 0px;
+  border-top: 2px solid rgb(228, 228, 228);
+}
+.contact {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.contact a:link {
+  color: black;
+  text-decoration: none;
+}
+.links {
+  padding-left: 15px;
+}
+.links a {
+  color: black;
+  text-decoration: none;
+}
+footer .links a:hover {
+  color: blue;
+}
+footer .sociala-medier a:hover {
+  color: blue;
+}
+footer .contact a:hover {
+  color: blue;
+}
+ul {
+  list-style-type: none;
+}
+.sociala-medier {
+  padding-left: 15px;
+}
+.sociala-medier a {
+  color: black;
+}
 
+<<<<<<< Updated upstream
 
       .evenemang-kort-content h2{
         font-size:clamp(1.5rem, 5vh, 1.9rem);
@@ -713,6 +759,16 @@ header {
         margin-bottom: 20px;
       }
     }
+=======
+@media only screen and (max-width: 545px) {
+  footer {
+    margin-left: -12px;
+    padding: 10px;
+    font-size: 10px;
+    margin-bottom: 20px;
+  }
+}
+>>>>>>> Stashed changes
 
 /* -------------------------  Böcker kort  ---------------------------- */
 
