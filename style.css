@@ -559,7 +559,6 @@ ul {
       border: none;
       width:15%;
       padding:2.1vh;
-      align-self: left;
       border:1px solid var(--röd);
       background-color: var(--orange); 
     }
@@ -585,7 +584,6 @@ ul {
     border: none;
     width:20%;
     padding:2.1vh;
-    align-self: left;
     border:1px solid var(--röd);
     background-color: var(--orange); 
   }
@@ -680,7 +678,7 @@ ul {
     margin: auto;
     text-align: left;
     width:70vw;
-    height:65vh;
+    height:auto;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -739,7 +737,6 @@ ul {
     border: none;
     width:50%;
     padding:2.1vh;
-    align-self: left;
     border:1px solid var(--röd);
     background-color: var(--orange); 
   }
@@ -756,7 +753,6 @@ ul {
       border: none;
       width:35%;
       padding:2.1vh;
-      align-self: left;
       border:1px solid var(--röd);
       background-color: var(--orange); 
     }
@@ -780,6 +776,7 @@ ul {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    margin-bottom:20vh;
   }
   .start-main-section-2 h1 {
     color: var(--röd);
@@ -817,13 +814,12 @@ ul {
   }
   .start-main-section-3  {
     background-color: var(--brun);
-    top:20vh;
     color:var(--vit);
     position: relative;
     margin: auto;
     text-align: center;
     width:70vw;
-    height:auto;
+    height:120vh;
     padding-bottom:50vh;
   }
   .start-main-section-3 .startsida-main-kort  {
@@ -836,7 +832,6 @@ ul {
     text-align:center;
     margin: auto;
     width:50vw;
-    height:auto;
     display: flex;
     flex-direction: column;
     padding:10vh;
@@ -883,7 +878,6 @@ ul {
     margin: auto;
     border-radius: 15px;
     width:95vw;
-    width:95vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -920,7 +914,6 @@ ul {
     border: none;
     width:50%;
     padding:2.1vh;
-    align-self: left;
     border:1px solid var(--röd);
     background-color: var(--orange); 
   }
