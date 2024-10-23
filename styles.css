@@ -161,6 +161,291 @@
     display: none;
   }
 }
+.all {
+  background-color: #fab0a6;
+  width: 1500px;
+  margin-left: 200px;
+  border-left: solid #f9c1b9 4px;
+  border-right: solid #f9c1b9 4px;
+}
+.about-us {
+  color: #672727;
+  margin-left: -100px;
+}
+.owners {
+  margin-left: -100px;
+  color: #f4f4f8;
+}
+.members {
+  color: #f4f4f8;
+  margin-left: 290px;
+  padding-bottom: 20px;
+  margin-top: -40px;
+}
+
+.item-1 {
+  background-color: rgba(255, 255, 255, 0);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 500px;
+  margin-left: 650px;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.item-1 a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  margin: 0;
+}
+
+/* Eivor */
+.card-1 {
+  display: flex;
+  align-items: center;
+  background-color: #af232c;
+  width: 500px;
+  height: 140px;
+  border: 1px solid #af232c;
+  border-radius: 8px;
+  padding: 10px;
+  margin-left: 390px;
+  margin-top: 10px;
+}
+
+.card-1 img {
+  width: 150px;
+  height: auto;
+  margin-right: 20px;
+  border-radius: 6px;
+  border-style: solid;
+  border-color: #921c24;
+}
+
+.card-1-content {
+  flex-grow: 1;
+}
+
+.card-1-content h2 {
+  margin: 0 0 10px;
+  font-size: 1.5em;
+  color: #ffffffbc;
+}
+
+.card-1-content p {
+  margin: 0;
+  color: #ffffffbc;
+}
+
+/* Gunnar */
+.card-2 {
+  display: flex;
+  align-items: center;
+  background-color: #af232c;
+  width: 500px;
+  height: 140px;
+  border: 1px solid #af232c;
+  border-radius: 8px;
+  padding: 10px;
+  margin-left: 920px;
+  margin-top: -139px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.card-2 img {
+  width: 150px;
+  height: auto;
+  margin-right: 20px;
+  border-radius: 6px;
+  border-style: solid;
+  border-color: #921c24;
+}
+.card-2-content {
+  flex-grow: 1;
+}
+.card-2-content h2 {
+  margin: 0 0 10px;
+  font-size: 1.5em;
+  color: #ffffffbc;
+}
+.card-2-content p {
+  margin: 0;
+  color: #ffffffbc;
+}
+.card h2 {
+  font-size: large;
+}
+.card p {
+  font-size: small;
+}
+
+.member-1 {
+  display: flex;
+  align-items: center;
+  background-color: #af232c;
+  width: 550px;
+  height: 240px;
+  border: 1px solid #af232c;
+  border-radius: 8px;
+  padding: 10px;
+
+  margin-top: 100px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.member-1 img {
+  width: 150px;
+  height: auto;
+  margin-right: 20px;
+  border-radius: 6px;
+  border-style: solid;
+  border-color: #921c24;
+}
+
+.member-1-content {
+  flex-grow: 1;
+}
+
+.member-1-content h2 {
+  margin: 0 0 10px;
+  font-size: 1.5em;
+  color: #ffffffbc;
+}
+
+.member-1-content p {
+  margin: 0;
+  color: #ffffffbc;
+}
+.member-2 {
+  display: flex;
+  align-items: center;
+  background-color: #af232c;
+  width: 550px;
+  height: 240px;
+  border: 1px solid #af232c;
+  border-radius: 8px;
+  padding: 10px;
+
+  margin-top: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.member-2 img {
+  width: 150px;
+  height: auto;
+  margin-right: 20px;
+  border-radius: 6px;
+  border-style: solid;
+  border-color: #921c24;
+}
+
+.member-2-content {
+  flex-grow: 1;
+}
+
+.member-2-content h2 {
+  margin: 0 0 10px;
+  font-size: 1.5em;
+  color: #ffffffbc;
+}
+
+.member-2-content p {
+  margin: 0;
+  color: #ffffffbc;
+}
+.member-3 {
+  display: flex;
+  align-items: center;
+  background-color: #af232c;
+  width: 550px;
+  height: 240px;
+  border: 1px solid #af232c;
+  border-radius: 8px;
+  padding: 10px;
+  margin-top: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.member-3 img {
+  width: 150px;
+  height: auto;
+  margin-right: 20px;
+  border-radius: 6px;
+  border-style: solid;
+  border-color: #921c24;
+}
+
+.member-3-content {
+  flex-grow: 1;
+}
+
+.member-3-content h2 {
+  margin: 0 0 10px;
+  font-size: 1.5em;
+  color: #ffffffbc;
+}
+
+.member-3-content p {
+  margin: 0;
+  color: #ffffffbc;
+}
+/*   footer  */
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: #f4f4f8;
+  font-size: small;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  position: absolute;
+  bottom: 0px;
+  border-top: 2px solid rgb(228, 228, 228);
+}
+.contact {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.contact a:link {
+  color: black;
+  text-decoration: none;
+}
+.links {
+  padding-left: 15px;
+}
+.links a {
+  color: black;
+  text-decoration: none;
+}
+footer .links a:hover {
+  color: blue;
+}
+footer .sociala-medier a:hover {
+  color: blue;
+}
+footer .contact a:hover {
+  color: blue;
+}
+ul {
+  list-style-type: none;
+}
+.sociala-medier {
+  padding-left: 15px;
+}
+.sociala-medier a {
+  color: black;
+}
+
+@media only screen and (max-width: 545px) {
+  footer {
+    margin-left: -12px;
+    padding: 10px;
+    font-size: 10px;
+    margin-bottom: 20px;
+  }
+}
 footer {
   display: flex;
   justify-content: center;
@@ -174,32 +459,32 @@ footer {
   bottom: 0px;
   border-top: 2px solid rgb(228, 228, 228);
 }
-footer .contact {
+.contact {
   padding-left: 15px;
   padding-right: 15px;
 }
-footer .contact a:link {
+.contact a:link {
   color: black;
   text-decoration: none;
 }
-footer .links {
+.links {
   padding-left: 15px;
 }
-footer .links a {
+.links a {
   color: black;
   text-decoration: none;
 }
-footer ul {
+ul {
   list-style-type: none;
 }
-footer .sociala-medier {
+.sociala-medier {
   padding-left: 15px;
 }
-footer .sociala-medier a {
+.sociala-medier a {
   color: black;
 }
+/*header*/
 
-/* Media queries */
 @media only screen and (max-width: 545px) {
   footer {
     margin-left: -12px;
@@ -208,6 +493,7 @@ footer .sociala-medier a {
     margin-bottom: 20px;
   }
 }
+
 @media only screen and (max-width: 610px) {
   .about-us {
     padding: 10px;
@@ -215,6 +501,8 @@ footer .sociala-medier a {
     margin-bottom: 20px;
     margin-left: -600px;
   }
+}
+@media only screen and (max-width: 610px) {
   .all {
     margin-left: 0px;
     padding: 10px;
@@ -223,28 +511,49 @@ footer .sociala-medier a {
     height: 100%;
     width: 610px;
   }
+}
+
+@media only screen and (max-width: 610px) {
   .card-1 {
     margin-left: 140px;
     width: 470px;
     height: 170px;
   }
+}
+@media only screen and (max-width: 610px) {
   .card-2 {
     margin-left: 140px;
     margin-top: 25px;
     width: 470px;
     height: 170px;
   }
+}
+@media only screen and (max-width: 610px) {
   .members {
     margin-left: 40px;
     margin-top: -50px;
   }
-  .member-1,
-  .member-2,
+}
+
+@media only screen and (max-width: 610px) {
+  .member-1 {
+    width: 470px;
+    height: 250px;
+  }
+}
+@media only screen and (max-width: 610px) {
+  .member-2 {
+    width: 470px;
+    height: 250px;
+  }
+}
+@media only screen and (max-width: 610px) {
   .member-3 {
     width: 470px;
     height: 250px;
   }
 }
+
 * {
   box-sizing: border-box;
   margin: 0;
