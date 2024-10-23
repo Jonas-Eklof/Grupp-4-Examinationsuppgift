@@ -857,6 +857,12 @@ ul {
       padding:10vh;
     }
   }
+  .startsidan-main-sida-logo {
+    width:50vh;
+    height:auto;
+    align-self: center;
+    filter:drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.396));
+  }
 
 
  /* Startsidan responsiv */
