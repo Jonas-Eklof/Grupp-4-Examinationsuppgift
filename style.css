@@ -436,7 +436,7 @@ ul {
 
     
    /* Evenemangskort mobil */
-    @media (max-width: 430px) {
+    @media (max-width: 1080px) {
         .evenemang-kort-bild-1 {
         margin-left:0vh;
           max-width:100%;
@@ -454,6 +454,12 @@ ul {
             border:none;
             align-self: flex-end;
           }
+
+        .evenemang-kort img {
+          align-self: center;
+          max-width: 100%;
+        }
+        
         .evenemang-kort {
           margin:auto;
           border-radius: 12px;
@@ -467,6 +473,15 @@ ul {
           flex-direction: column;
           box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.348);
           }
+
+          .evenemang-kort:nth-child(2) {
+            flex-direction: column-reverse;
+          }
+
+          /* .evenemang-kort:nth-child(2) img {
+            min-width: 100%;
+          } */
+
           .evenemang-kort-tags {
             font-size:clamp(0.8rem, 3vh, 1rem);
             font-weight: 600;
