@@ -6,13 +6,13 @@ Vi är ett team på fyra personer som har fått i uppdrag att skapa en bokhandel
 Hemsidan ska innehålla information om böcker, information om personalen och evenemang.
 Projektet är skapat i Github.
 
-##Vi använder oss av:
+## Vi använder oss av:
 * Semantisk HTML
 * SCSS
 * Tailwind
 
 
-##Under huven:
+## Under huven:
 * SEO
 * META-TAGGAR
 * Felsökning och kodvalidering
