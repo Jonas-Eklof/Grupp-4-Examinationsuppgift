@@ -66,7 +66,7 @@ body {
   margin-left: 3rem;
 }
 
-/* Hide hamburger by default */
+/* Hide hamburger menu by default */
 .hamburger {
   display: none;
 }
@@ -162,12 +162,12 @@ body {
 
 .hamburger #menu-btn:checked ~ .menu-icon .navicon:before {
   transform: rotate(-45deg);
-  background: #fff;
+  background: var(--vit);
 }
 
 .hamburger #menu-btn:checked ~ .menu-icon .navicon:after {
   transform: rotate(45deg);
-  background: #fff;
+  background: var(--vit);
 }
 
 .hamburger #menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
@@ -210,7 +210,7 @@ body {
 
 /* ------------------------- Desktop ---------------------------- */
 
-@media (width > 77.5em) {
+@media (max-width > 77.5em) {
   .desktop-menu {
     display: block;
     margin-left: auto;
@@ -234,7 +234,7 @@ body {
   max-width: 70rem;
   height: 36rem;
   display: flex;
-  background-color: #672727;
+  background-color: var(--brun);
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
@@ -250,7 +250,7 @@ body {
   margin-top: 8rem;
   margin-right: 1rem;
   font-size: 16px;
-  color: #f4f4f8;
+  color: var(--vit);
 }
 
 .info-evenemang h1 {
@@ -292,7 +292,7 @@ body {
 
 
 .evenemang-kort-main {
-  background-color: #672727;
+  background-color: var(--brun);
   height:auto;
   display:flex;
   flex-wrap: wrap;
@@ -312,7 +312,7 @@ body {
   .evenemang-kort {
     margin:auto;
     border-radius: 12px;
-    background-color: #F4F4F8;
+    background-color: var(--vit);
     max-width:clamp(80vw, 60vw, 1500px);
     max-height:60vh;
     padding:2rem;
@@ -333,13 +333,13 @@ body {
       font-weight: 600;
       position: relative;
       margin-top: -4vh;
-      color: #672727;
+      color: var(--brun);
       display:flex;
       flex-direction: row;
       justify-content:space-between;
       }
     .evenemang-kort-content{
-      color: #AF232C;
+      color: var(--röd);
       display:flex;
       flex-direction: column;
       justify-content: space-evenly;
@@ -348,7 +348,7 @@ body {
 footer {
   display: flex;
   justify-content: center;
-  background-color: #f4f4f8;
+  background-color: var(--vit);
   font-size: small;
   width: 100%;
   text-align: center;
@@ -424,7 +424,7 @@ ul {
       text-decoration: none;
       font-weight: 600;
       font-size:clamp(0.9rem, 1vh, 1.1rem);
-      color:#F4F4F8;
+      color:var(--vit);
       border: none;
       width:37vh;
       padding:2.3vh;
@@ -468,7 +468,7 @@ ul {
         .evenemang-kort {
           margin:auto;
           border-radius: 12px;
-          background-color: #F4F4F8;
+          background-color: var(--vit);
           max-width:92vw;
           max-height:92vh;
           margin-bottom:2vh;
@@ -492,13 +492,13 @@ ul {
             font-weight: 600;
             position: relative;
             margin-top: 2vh;
-            color: #672727;
+            color: var(--brun);
             display:flex;
             flex-direction: row;
             justify-content:space-between;
             }
           .evenemang-kort-content{
-            color: #AF232C;
+            color: var(--röd);
             display:flex;
             flex-direction: column;
             justify-content: space-evenly;
@@ -525,7 +525,7 @@ ul {
             text-decoration: none;
             font-weight: 600;
             font-size:clamp(1rem, 1vh, 1.1rem);
-            color:#F4F4F8;
+            color:var(--vit);
             border: none;
             width:100%;
             padding:2.4vh;
@@ -578,7 +578,7 @@ ul {
 
 
   .start-header h3 {
-    color: #F4F4F8;
+    color: var(--vit);
     font-size: 3.1rem;
     padding:0 0 0 5vh;
   }
@@ -591,18 +591,18 @@ ul {
 
   @media (min-width: 1500px) {
     .start-header h3 {
-      color: #F4F4F8;
+      color: var(--vit);
       font-size: 4rem;
       padding:0 0 0 5vh;
     }
     .start-header h2 {
-      color:  #FAB0A6;
+      color:  var(--rosa);
       font-size: 1.5rem;
       font-weight: 500;
       padding:0 0 0 5vh;
     }
     .start-header h3 {
-      color: #F4F4F8;
+      color: var(--vit);
       font-size: 4.1rem;
       padding:0 0 0 5vh;
     }
@@ -614,7 +614,7 @@ ul {
       text-decoration: none;
       font-weight: 600;
       font-size:clamp(1rem, 1vh, 1.1rem);
-      color:#F4F4F8;
+      color:var(--vit);
       border: none;
       width:15%;
       padding:2.1vh;
@@ -643,7 +643,7 @@ ul {
     text-decoration: none;
     font-weight: 600;
     font-size:clamp(1rem, 1vh, 1.1rem);
-    color:#F4F4F8;
+    color:var(--vit);
     border: none;
     width:20%;
     padding:2.1vh;
@@ -796,7 +796,7 @@ ul {
     text-decoration: none;
     font-weight: 600;
     font-size:clamp(1rem, 1vh, 1.1rem);
-    color:#F4F4F8;
+    color:var(--vit);
     border: none;
     width:50%;
     padding:2.1vh;
@@ -812,7 +812,7 @@ ul {
       text-decoration: none;
       font-weight: 600;
       font-size:clamp(1rem, 1vh, 1.1rem);
-      color:#F4F4F8;
+      color:var(--vit);
       border: none;
       width:35%;
       padding:2.1vh;
@@ -961,7 +961,7 @@ ul {
     box-shadow:5px 5px 10px rgba(0, 0, 0, 0.206);
   }
   .start-header h3 {
-    color: #F4F4F8;
+    color: var(--vit);
     font-size: 2.2rem;
     padding:0 0 0 5vh;
   }
@@ -993,7 +993,7 @@ ul {
     text-decoration: none;
     font-weight: 600;
     font-size:clamp(1rem, 1vh, 1.1rem);
-    color:#F4F4F8;
+    color:var(--vit);
     border: none;
     width:50%;
     padding:2.1vh;
@@ -1053,7 +1053,7 @@ ul {
     text-decoration: none;
     font-weight: 600;
     font-size:clamp(1rem, 1vh, 1.1rem);
-    color:#F4F4F8;
+    color:var(--vit);
     border: none;
     width:55%;
     padding:2vh;
