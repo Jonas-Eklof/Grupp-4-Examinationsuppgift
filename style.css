@@ -638,9 +638,70 @@ ul {
   }
 
 
+  .start-main-section-1  {
+    overflow: hidden;
+    top:10vh;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.258);
+    border-radius: 15px;
+    position: relative;
+    margin: auto;
+    text-align: left;
+    width:70vw;
+    height:65vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .start-main-section-1-h1-p {
+    flex-direction: column;
+    padding:3vh;
+  }
+  .start-main-section-1 h1 {
+    color: var(--röd);
+    align-self: center;
+    font-size: 2.5rem;
+    padding:0 5vh 0 5vh;
+    width:100%;
+  }
+  .start-main-section-1 p {
+    width:90%;
+    color: var(--röd);
+    font-size: 1.2rem;
+    padding:0 5vh 0 5vh;
+  }
+
+  .start-main-section-1-bild-1 {
+    flex-direction: row;
+    width:74vh;
+    height:auto;
+  }
+  .start-main-section-1-button {
+    position: relative;
+    top: 5vh;
+    left:5vh;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size:clamp(1rem, 1vh, 1.1rem);
+    color:#F4F4F8;
+    border: none;
+    width:35%;
+    padding:2.1vh;
+    align-self: left;
+    border:1px solid var(--röd);
+    background-color: var(--orange); 
+  }
+  .start-main-section-1-button:hover {
+    cursor:pointer;
+    border:1px solid var(--röd);
+    background-color: var(--brun); 
+  }
+
+  
   
   .start-main-section-2  {
-    top:20vh;
+    top:30vh;
     position: relative;
     margin: auto;
     text-align: center;
@@ -659,16 +720,15 @@ ul {
   .start-main-section-2 p {
     width:50%;
     line-height: 3.7vh;
-    color: var(--orange);
+    color: var(--röd);
     font-size: 1.3rem;
     font-weight: 500;
-    padding:0 0 0 5vh;
+    padding:0 0 0 8vh;
   }
   .start-main-section-2-linebreak {
     margin:1vh;
     max-width:10vh;
     height:1vh;
-    border-radius: 15px;
     background-color: var(--orange);
   }
   .start-main-section-3  {
@@ -683,7 +743,7 @@ ul {
     padding-bottom:50vh;
   }
   .start-main-section-3 .startsida-main-kort  {
-    top:10vh;
+    top:13vh;
     background-color: var(--vit);
     color:var(--orange);
     border-radius: 10px;
@@ -698,8 +758,217 @@ ul {
     padding:10vh;
   }
   .start-main-section-3 p {
-    padding:4vh;
+    padding:0 7vh 0 7vh;
+    color:var(--röd);
   }
+
+
+
+ /* Startsidan responsiv */
+  @media only screen and (max-width: 545px) {
+  .start-aside{
+    display:none;
+  }
+  .start_main {
+    top:3vh;
+    position: relative;
+    width:100%;
+    height:auto;
+  }
+
+
+  .start-header {
+    background-size: cover;
+    position: relative;
+    margin: auto;
+    border-radius: 15px;
+    width:95vw;
+    width:95vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow:5px 5px 10px rgba(0, 0, 0, 0.206);
+  }
+  .start-header h1 {
+    color: #F4F4F8;
+    font-size: 2.2rem;
+    padding:0 0 0 5vh;
+  }
+  .start-header h3 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding:0 5vh 0 5vh;
+  }
+
+
+  .start_main {
+    top:3vh;
+    position: relative;
+    width:100%;
+    height:auto;
+  }
+
+  .start-main-header-button {
+    position: relative;
+    top: 5vh;
+    left:5vh;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size:clamp(1rem, 1vh, 1.1rem);
+    color:#F4F4F8;
+    border: none;
+    width:50%;
+    padding:2.1vh;
+    align-self: left;
+    border:1px solid var(--röd);
+    background-color: var(--orange); 
+  }
+
+
+
+  .start-main-section-1  {
+    overflow: hidden;
+    top:10vh;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.258);
+    border-radius: 15px;
+    position: relative;
+    margin: auto;
+    text-align: center;
+    width:95vw;
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom:5vh;
+  }
+  .start-main-section-1-h1-p {
+    flex-direction: column;
+    padding:2vh;
+  }
+  .start-main-section-1 h1 {
+    margin-top:5vh;
+    color: var(--röd);
+    font-size: 1.5rem;
+    padding:0 5vh 0 5vh;
+    width:90%;
+  }
+  .start-main-section-1 p {
+    width:90%;
+    color: var(--röd);
+    font-size: 1rem;
+    padding:0 5vh 0 5vh;
+  }
+
+  .start-main-section-1-bild-1 {
+    display:none;
+    flex-direction: row;
+    width:80%;
+    height:auto;
+    border-radius: 15px;
+  }
+  .start-main-section-1-button {
+    position: relative;
+    top: 0vh;
+    margin-top:3vh;
+    left:-1vh;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size:clamp(1rem, 1vh, 1.1rem);
+    color:#F4F4F8;
+    border: none;
+    width:55%;
+    padding:2vh;
+    align-self: center;
+    border:1px solid var(--röd);
+    background-color: var(--orange); 
+  }
+
+
+  .start-main-section-2  {
+    top:20vh;
+    position: relative;
+    margin: auto;
+    text-align: center;
+    width:70vw;
+    height:60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .start-main-section-2 h1 {
+    color: var(--röd);
+    font-size: 1.9rem;
+    padding:0 0 0 5vh;
+  }
+  .start-main-section-2 p {
+    width:90%;
+    line-height: 2.7vh;
+    color: var(--röd);
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding:0 0 0 1vh;
+  }
+  .start-main-section-2-linebreak {
+    margin:1vh;
+    max-width:10vh;
+    height:0.5vh;
+    border-radius: 15px;
+    background-color: var(--orange);
+  }
+  .start-main-section-3  {
+    background-color: var(--brun);
+    top:15vh;
+    color:var(--vit);
+    position: relative;
+    margin: auto;
+    text-align: center;
+    width:95vw;
+    height:auto;
+    padding-bottom:30vh;
+  }
+  .start-main-section-3 .startsida-main-kort  {
+    top:5vh;
+    background-color: var(--vit);
+    color:var(--orange);
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.248);
+    position: relative;
+    text-align:center;
+    margin: auto;
+    width:92vw;
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    padding:2vh;
+    padding-bottom:5vh;
+  }
+  .start-main-section-3 p {
+    padding:0 4vh 0 4vh;
+    color:var(--röd);
+  }
+
+
+
+
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
