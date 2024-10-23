@@ -1151,6 +1151,10 @@ ul {
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.348);
 }
 
+.bocker-kort figure {
+  margin-inline: auto;
+}
+
 .bocker-kort img {
   width: clamp(50px, 150px, 250px);
   padding: 2rem 1rem;
