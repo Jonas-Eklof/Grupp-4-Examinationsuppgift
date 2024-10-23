@@ -31,13 +31,13 @@ body {
   max-width: 120px;
 }
 
-header {
+.main-header {
   background-color: var(--vit);
   display: flex;
   justify-content: space-between;
   align-items: center;
   max-height: 123px;
-  padding: 2rem 3rem;
+  padding: 2rem 10%;
   box-shadow: 0 6px 13px 7px #7627273e;
   position: relative;
   z-index: 1;
@@ -177,6 +177,11 @@ header {
 
 /* Media query for mobile */
 @media (max-width: 1080px) {
+
+  .main-header {
+    padding: 2rem;
+  }
+
   .desktop-menu {
     display: none;
   }
@@ -243,11 +248,29 @@ header {
 .info-evenemang {
   margin-left: 2rem;
   margin-top: 8rem;
+  margin-right: 1rem;
   font-size: 16px;
   color: #f4f4f8;
 }
 
+.info-evenemang h1 {
+    font-size: 2rem;
+  }
+
 @media (max-width: 768px) {
+
+  .evenemang-header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 80%;
+  }
+
+  .info-evenemang {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+
   .bild13,
   .bild {
     width: 80%;
@@ -386,6 +409,13 @@ ul {
         font-size:clamp(0.9rem, 3vh, 1.1rem);
         line-height: clamp(1.3rem, 4vh, 1.6rem);
       }
+      .evenemang-kort-bild-1-variation {
+          width:55%;
+          height:auto;
+          background-color: black;
+          border:none;
+          align-self: flex-end;
+        }
 
     .evenemang-kort button {
       position: relative;
@@ -411,7 +441,7 @@ ul {
 
     
    /* Evenemangskort mobil */
-    @media (max-width: 430px) {
+    @media (max-width: 1080px) {
         .evenemang-kort-bild-1 {
         margin-left:0vh;
           max-width:100%;
@@ -421,14 +451,20 @@ ul {
           align-self: flex-start;
         }
         .evenemang-kort-bild-1-variation {
-          margin-top:8vh;
-          margin-left:0vh;
+            margin-top:8vh;
+            margin-left:0vh;
             max-width:100%;
             height:auto;
             background-color: black;
             border:none;
             align-self: flex-end;
           }
+
+        .evenemang-kort img {
+          align-self: center;
+          max-width: 100%;
+        }
+        
         .evenemang-kort {
           margin:auto;
           border-radius: 12px;
@@ -442,6 +478,15 @@ ul {
           flex-direction: column;
           box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.348);
           }
+
+          .evenemang-kort:nth-child(2) {
+            flex-direction: column-reverse;
+          }
+
+          /* .evenemang-kort:nth-child(2) img {
+            min-width: 100%;
+          } */
+
           .evenemang-kort-tags {
             font-size:clamp(0.8rem, 3vh, 1rem);
             font-weight: 600;
@@ -497,8 +542,6 @@ ul {
     
     
 
-
-
    /*  Startsidan CSS */
 
    .visually-hidden {
@@ -532,16 +575,46 @@ ul {
     justify-content: center;
     box-shadow:5px 5px 10px rgba(0, 0, 0, 0.206);
   }
-  .start-header h4 {
-    color:  #FAB0A6;
-    font-size: 1.4rem;
+
+  .start-header h1 {
+    color: #F4F4F8;
+    font-size: 3.1rem;
     padding:0 0 0 5vh;
   }
   .start-header h3 {
-    color: #F4F4F8;
-    font-size: 4rem;
+    color:  #FAB0A6;
+    font-size: 1.2rem;
+
     font-weight: 500;
     padding:0 0 0 5vh;
+  }
+  @media (min-width: 1500px) {
+    .start-header h1 {
+      color: #F4F4F8;
+      font-size: 4rem;
+      padding:0 0 0 5vh;
+    }
+    .start-header h3 {
+      color:  #FAB0A6;
+      font-size: 1.4rem;
+      font-weight: 500;
+      padding:0 0 0 5vh;
+    }
+    .start-main-header-button {
+      position: relative;
+      top: 5vh;
+      left:5vh;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size:clamp(1rem, 1vh, 1.1rem);
+      color:#F4F4F8;
+      border: none;
+      width:15%;
+      padding:2.1vh;
+      border:1px solid var(--röd);
+      background-color: var(--orange); 
+    }
   }
 
   .start-header p{
@@ -566,9 +639,8 @@ ul {
     font-size:clamp(1rem, 1vh, 1.1rem);
     color:#F4F4F8;
     border: none;
-    width:15%;
+    width:20%;
     padding:2.1vh;
-    align-self: left;
     border:1px solid var(--röd);
     background-color: var(--orange); 
   }
@@ -654,9 +726,104 @@ ul {
   }
 
 
+  .start-main-section-1  {
+    overflow: hidden;
+    top:10vh;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.258);
+    border-radius: 15px;
+    position: relative;
+    margin: auto;
+    text-align: left;
+    width:70vw;
+    height:auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .start-main-section-1-h1-p {
+    flex-direction: column;
+    padding:3vh;
+  }
+  .start-main-section-1 h1 {
+    color: var(--röd);
+    align-self: center;
+    font-size: 1.9rem;
+    padding:0 2vh 0 5vh;
+    width:100%;
+  }
+  @media (min-width: 1500px) {
+    .start-main-section-1 h1 {
+      color: var(--röd);
+      align-self: center;
+      font-size: 2.5rem;
+      padding:0 5vh 0 5vh;
+      width:100%;
+    }
+  }
+
+  .start-main-section-1 p {
+    width:95%;
+    color: var(--röd);
+    font-size: 1rem;
+    padding:0 5vh 0 5vh;
+  }
+  @media (min-width: 1500px) {
+    .start-main-section-1 p {
+      width:90%;
+      color: var(--röd);
+      font-size: 1.2rem;
+      padding:0 5vh 0 5vh;
+    }
+  }
+
+  .start-main-section-1-bild-1 {
+    flex-direction: row;
+    width:74vh;
+    height:auto;
+  }
+  .start-main-section-1-button {
+    position: relative;
+    top: 5vh;
+    left:5vh;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size:clamp(1rem, 1vh, 1.1rem);
+    color:#F4F4F8;
+    border: none;
+    width:50%;
+    padding:2.1vh;
+    border:1px solid var(--röd);
+    background-color: var(--orange); 
+  }
+  @media (min-width: 1500px) {
+    .start-main-section-1-button {
+      position: relative;
+      top: 5vh;
+      left:5vh;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size:clamp(1rem, 1vh, 1.1rem);
+      color:#F4F4F8;
+      border: none;
+      width:35%;
+      padding:2.1vh;
+      border:1px solid var(--röd);
+      background-color: var(--orange); 
+    }
+  }
+  .start-main-section-1-button:hover {
+    cursor:pointer;
+    border:1px solid var(--röd);
+    background-color: var(--brun); 
+  }
+
+  
   
   .start-main-section-2  {
-    top:20vh;
+    top:30vh;
     position: relative;
     margin: auto;
     text-align: center;
@@ -666,40 +833,54 @@ ul {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    margin-bottom:20vh;
   }
   .start-main-section-2 h2 {
     color: var(--röd);
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     padding:0 0 0 5vh;
   }
   .start-main-section-2 p {
     width:50%;
     line-height: 3.7vh;
-    color: var(--orange);
-    font-size: 1.3rem;
+    color: var(--röd);
+    font-size: 1.1rem;
     font-weight: 500;
-    padding:0 0 0 5vh;
+    padding:0 0 0 8vh;
+  }
+  @media (min-width: 1500px) {
+    .start-main-section-2 h1 {
+      color: var(--röd);
+      font-size: 3.5rem;
+      padding:0 0 0 5vh;
+    }
+    .start-main-section-2 p {
+      width:50%;
+      line-height: 3.7vh;
+      color: var(--röd);
+      font-size: 1.3rem;
+      font-weight: 500;
+      padding:0 0 0 8vh;
+    }
   }
   .start-main-section-2-linebreak {
     margin:1vh;
     max-width:10vh;
     height:1vh;
-    border-radius: 15px;
     background-color: var(--orange);
   }
   .start-main-section-3  {
     background-color: var(--brun);
-    top:20vh;
     color:var(--vit);
     position: relative;
     margin: auto;
     text-align: center;
     width:70vw;
-    height:auto;
+    height:120vh;
     padding-bottom:50vh;
   }
   .start-main-section-3 .startsida-main-kort  {
-    top:10vh;
+    top:13vh;
     background-color: var(--vit);
     color:var(--orange);
     border-radius: 10px;
@@ -707,15 +888,254 @@ ul {
     position: relative;
     text-align:center;
     margin: auto;
-    width:40vw;
-    height:auto;
+    width:50vw;
     display: flex;
     flex-direction: column;
     padding:10vh;
   }
   .start-main-section-3 p {
-    padding:4vh;
+    padding:0 7vh 0 7vh;
+    color:var(--röd);
   }
+  @media (min-width: 1500px) {
+    .start-main-section-3 .startsida-main-kort  {
+      top:13vh;
+      background-color: var(--vit);
+      color:var(--orange);
+      border-radius: 10px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.248);
+      position: relative;
+      text-align:center;
+      margin: auto;
+      width:40vw;
+      height:auto;
+      display: flex;
+      flex-direction: column;
+      padding:10vh;
+    }
+  }
+  .startsidan-main-sida-logo {
+    width:50vh;
+    height:auto;
+    align-self: center;
+    filter:drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.396));
+  }
+
+
+ /* Startsidan responsiv */
+ 
+  @media only screen and (max-width: 545px) {
+  .start-aside{
+    display:none;
+  }
+  .start_main {
+    top:3vh;
+    position: relative;
+    width:100%;
+    height:auto;
+  }
+  .startsidan-main-sida-logo {
+    padding-top:5vh;
+    width:30vh;
+    height:auto;
+    align-self: center;
+    filter:drop-shadow(3px 3px 5px rgba(0, 0, 0, 0.396));
+  }
+
+
+  .start-header {
+    background-size: cover;
+    position: relative;
+    margin: auto;
+    border-radius: 15px;
+    width:95vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow:5px 5px 10px rgba(0, 0, 0, 0.206);
+  }
+  .start-header h1 {
+    color: #F4F4F8;
+    font-size: 2.2rem;
+    padding:0 0 0 5vh;
+  }
+  .start-header h3 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding:0 5vh 0 5vh;
+  }
+
+
+  .start_main {
+    top:3vh;
+    position: relative;
+    width:100%;
+    height:auto;
+  }
+
+  .start-main-header-button {
+    position: relative;
+    top: 5vh;
+    left:5vh;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size:clamp(1rem, 1vh, 1.1rem);
+    color:#F4F4F8;
+    border: none;
+    width:50%;
+    padding:2.1vh;
+    border:1px solid var(--röd);
+    background-color: var(--orange); 
+  }
+
+
+
+  .start-main-section-1  {
+    overflow: hidden;
+    top:10vh;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.258);
+    border-radius: 15px;
+    position: relative;
+    margin: auto;
+    text-align: center;
+    width:95vw;
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom:5vh;
+  }
+  .start-main-section-1-h1-p {
+    flex-direction: column;
+    padding:2vh;
+  }
+  .start-main-section-1 h1 {
+    margin-top:5vh;
+    color: var(--röd);
+    font-size: 1.5rem;
+    padding:0 5vh 0 5vh;
+    width:90%;
+  }
+  .start-main-section-1 p {
+    width:90%;
+    color: var(--röd);
+    font-size: 1rem;
+    padding:0 5vh 0 5vh;
+  }
+
+  .start-main-section-1-bild-1 {
+    display:none;
+    flex-direction: row;
+    width:80%;
+    height:auto;
+    border-radius: 15px;
+  }
+  .start-main-section-1-button {
+    position: relative;
+    top: 0vh;
+    margin-top:3vh;
+    left:-1vh;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size:clamp(1rem, 1vh, 1.1rem);
+    color:#F4F4F8;
+    border: none;
+    width:55%;
+    padding:2vh;
+    align-self: center;
+    border:1px solid var(--röd);
+    background-color: var(--orange); 
+  }
+
+
+  .start-main-section-2  {
+    top:20vh;
+    position: relative;
+    margin: auto;
+    text-align: center;
+    width:70vw;
+    height:60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom:5vh;
+  }
+  .start-main-section-2 h1 {
+    color: var(--röd);
+    font-size: 1.9rem;
+    padding:0 0 0 5vh;
+  }
+  .start-main-section-2 p {
+    width:90%;
+    line-height: 2.7vh;
+    color: var(--röd);
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding:0 0 0 1vh;
+  }
+  .start-main-section-2-linebreak {
+    margin:1vh;
+    max-width:10vh;
+    height:0.5vh;
+    border-radius: 15px;
+    background-color: var(--orange);
+  }
+  .start-main-section-3  {
+    background-color: var(--brun);
+    top:15vh;
+    color:var(--vit);
+    position: relative;
+    margin: auto;
+    text-align: center;
+    width:95vw;
+    height:auto;
+    padding-bottom:30vh;
+  }
+  .start-main-section-3 .startsida-main-kort  {
+    top:5vh;
+    background-color: var(--vit);
+    color:var(--orange);
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.248);
+    position: relative;
+    text-align:center;
+    margin: auto;
+    width:92vw;
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    padding:2vh;
+    padding-bottom:5vh;
+  }
+  .start-main-section-3 p {
+    padding:0 4vh 0 4vh;
+    color:var(--röd);
+  }
+
+
+
+
+  }
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -766,7 +1186,21 @@ ul {
     .sociala-medier a {
       color: black;
     }
-    
+    footer .links a:hover{
+      color:blue
+  
+      }
+      footer .sociala-medier a:hover{
+      color:blue  
+  
+      }
+      footer .contact a:hover{
+      color:blue
+      }
+    .copywright{
+      color: black;
+      margin-top: 100px;
+      }
     @media only screen and (max-width: 545px) {
       footer {
         margin-left: -12px;
@@ -775,6 +1209,7 @@ ul {
         margin-bottom: 20px;
       }
     }
+
 
 /* -------------------------  Böcker kort  ---------------------------- */
 
@@ -793,6 +1228,10 @@ ul {
   margin-bottom: 5rem;
   border-radius: 12px;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.348);
+}
+
+.bocker-kort figure {
+  margin-inline: auto;
 }
 
 .bocker-kort img {

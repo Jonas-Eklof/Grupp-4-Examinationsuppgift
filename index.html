@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pärmar och Poesi</title>
-    <meta name="description" content="Pärmar & Poesi är din lokala bokhandel i Spillersboda. Vi erbjuder ett brett sortiment av böcker och regelbundna evenemang.">
-    <link rel="stylesheet" href="style.css" />
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Välkommen till vår bokklubb! Upptäck nya böcker, delta i diskussioner och var med på våra evenemang. En plats för alla bokälskare.">
+    <meta name="keywords" content="bokklubb, böcker, läsning, litteratur, bokdiskussioner, evenemang">
+    <meta name="author" content="Eivor Svensson, Gunnar Eriksson">
+    <meta name="robots" content="index, follow">
+    <title>Startsida - Pärmar och Poesi</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
 
     <!--Jonas -->
-    <header>
+    <header class="main-header">
       <a href="#" style="color:#af232c;pointer-events:none"><img src="img/logo.png" alt="logo" id="logo" /></a>
       <nav class="desktop-menu">
         <ul>
@@ -41,6 +45,7 @@
         <h1 class="visually-hidden">Pärmar & Poesi: Din lokala bokhandel i Spillersboda</h1>
       <!-- Main header -->
     <section class="start_main">
+
       <h2 class="visually-hidden">Pärmar & Poesi:Där bok älskare samlas</h2>
       <section class="start-header">
         <h3 class="visually-hidden">Pärmar & Poesi: Där bok evenemang händer</h3>
@@ -53,25 +58,58 @@
         <button class="start-main-header-button" onclick="document.location='evenemang.html'" aria-label="Se alla våra evenemang">Evenemang</button>
       </section>
 
+      <section class="start-main-section-1 leading-tight">
+        <section class="start-main-section-1-h1-p">
+        <h1 class="font-bold leading-tight"> Svante Svantesson kommer till Pärmar och Poesi. </h1>
+        <br><br>
+        <p>Svante är känd för att skriva böcker. <br>Nu kommer han till oss för att berätta om böcker. <br><br> <strong>Missa det inte!</strong>  </p>
+        <button class="start-main-section-1-button" onclick="document.location='evenemang.html'">Evenemang</button>
+      </section>
+        <img class="start-main-section-1-bild-1" src="img/start-sidan-bild-2.jpg" alt="Bild på Svante Svantesson">
+
+      </section>
+      
+
+      
       <section class="start-main-section-2">
+
         <h2> Öppna upp en ny värld. </h2>
+
         <br>
         <p class="start-main-section-2-linebreak"></p>
         <br>
-        <p> <em>Böcker är en källa till kunskap och insikter, vilket gör att vi kan förstå komplexa ämnen och kulturer bättre. 
-          <br>Dessutom ger läsning en möjlighet till avkoppling och kan minska stress, vilket gör det till en utmärkt metod för att koppla av och njuta av stunder av stillhet. </em> </p>
+        <p> <em>En bok är en källa till kunskap och insikter, till drömmar och fantasifulla fantasier. 
+          <br>Läsning kan vara avkopplande och kan minska stress, vilket gör det till en utmärkt metod för att koppla av och njuta av stunden. </em> </p>
       </section>
 
       <section class="start-main-section-3">
+
         <br>
         <h2>Författare </h2>
         <section class="startsida-main-kort">
-          <img src="img/bild14.jpg" alt="Bild på när en grupp har högläsning">
+          <img src="img/start-sidan-bild-2.jpg" alt="Bild på Svante Svantesson">
+
+
+        <section class="startsida-main-kort">
+          <img class="startsidan-main-sida-logo" src="img/logo-stor.png" alt="Pärmar och Poesi Logga">
           <br>
-          <h3>Svante Svantesson </h3>
-          <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium, rerum, numquam cupiditate est perspiciatis fugit quidem incidunt corporis labore laboriosam quas. Neque illum quaerat, at pariatur repudiandae quibusdam odio asperiores.</p>
+
+          <br>
+          <h2 class="text-3xl font-bold" style="color:#AF232C;">Välkommen in i klubben! </h2>
+          <h3 class="text-xl font-bold leading-relaxed" style="padding:3px;"><em>- Pärmar och Poesi</em> </h3>
+          <p class="text-lg" >  
+            <br><br>
+            <em> Spillerbodavägen 36, 412 60 Spillerboda.
+            <br>
+            parmarochpoesi@hotmail.com
+            <br>
+            <br>
+            Tele: 076-367 23 45
+          </em>
+          </p>
         </section>
       </section>
+      
 
 
     </section>
@@ -81,45 +119,46 @@
 
     <!-- Aside sektion -->
     <aside class="start-aside">
-      <h2>Veckans Favoriter </h2>
+      <h2 class="text-2xl">Veckans Favoriter </h2>
 
       <section class="start-bok-1" aria-label="Bok: Harry Potter">
         <section class="start-bok-1-text">
-            <h3>Harry Potter </h3>
+            <h3 class="text-lg font-bold leading-none">Harry Potter </h3>
             <p>En klassisk berättelse om den magiske pojken Harry. </p>
             <br>
-            <button>Beställ här </button>
+            <button class="text-sm">Beställ här </button>
     </section>
+
       <img class="start-aside-bok-bild" src="img/start-aside-bok-bild.jpg" alt="Omslagsbild för boken Harry Potter och de vises sten av J.K. Rowling">
+
       </section>
       <section class="start-bok-1" aria-label="Bok: Harry Potter">
         <section class="start-bok-1-text">
-            <h3>Harry Potter </h3>
+            <h3 class="text-lg font-bold leading-none">Harry Potter </h3>
             <p>En klassisk berättelse om den magiske pojken Harry. </p>
             <br>
-            <button>Beställ här </button>
+            <button class="text-sm">Beställ här </button>
     </section>
+
       <img class="start-aside-bok-bild" src="img/start-aside-bok-bild.jpg" alt="Omslagsbild för boken Harry Potter och de vises sten av J.K. Rowling">
+
       </section>
       <section class="start-bok-1" aria-label="Bok: Harry Potter">
         <section class="start-bok-1-text">
-            <h3>Harry Potter </h3>
+            <h3 class="text-lg font-bold leading-none">Harry Potter </h3>
             <p>En klassisk berättelse om den magiske pojken Harry. </p>
             <br>
-            <button>Beställ här </button>
+            <button class="text-sm">Beställ här </button>
     </section>
+
       <img class="start-aside-bok-bild" src="img/start-aside-bok-bild.jpg" alt="Omslagsbild för boken Harry Potter och de vises sten av J.K. Rowling">
+
       </section>
 
 
     </aside> 
   </section>
-
-
-
-
-
-    </main>
+  </main>
 
 
 
@@ -127,6 +166,7 @@
 
 
 
+  
     <!-- Milton -->
     <footer>
             <article class="information">
@@ -136,6 +176,7 @@
                 <p>Mån-Fre kl:10-16</p>
                 <p>Lör kl:10-14</p>
                 <p>Sön:Stängt</p>
+
               </section>
             </article>
 
@@ -148,6 +189,7 @@
             
                     <h4>Info</h4>
                
+
                   <address>
                     <p>412 60 Spillerboda</p>
                     <p>Spillerbodavägen 36</p>
@@ -155,10 +197,13 @@
               </article>
               <nav class="links">
                 <ul>
-                  <li><a href="Hem">Hem</a></li>
-                  <li><a href="books">Böcker</a></li>
-                  <li><a href="Evenemang">Evenemang</a></li>
-                  <li><a href="Om-oss.html">Om oss</a></li>
+
+
+                  <li><a href="index.html">Hem</a></li>
+                  <li><a href="bocker.html">Böcker</a></li>
+                  <li><a href="evenemang.html">Evenemang</a></li>
+                  <li><a href="omoss.html">Om oss</a></li>
+
                 </ul>
               </nav>
               <nav class="sociala-medier">
@@ -168,7 +213,9 @@
                 <li><a href="Instagram">Instagram</a></li>
                 </ul>
               </nav>
-
+              <a class="copywright">
+                <p>Copyright © Pärmar&Poesi | 2024</p>
+              </a>
     </footer>
     
 
