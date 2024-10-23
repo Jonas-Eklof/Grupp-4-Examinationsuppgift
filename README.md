@@ -10,6 +10,7 @@ Projektet är skapat i Github.
 * Semantisk HTML
 * SCSS
 * Tailwind
+* Flexbox
 
 
 ### Under huven:
