@@ -1,0 +1,191 @@
+#logo {
+  max-width: 120px;
+}
+
+header {
+  background-color: $vit;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-height: 123px;
+  padding: 2rem 3rem;
+  box-shadow: 0 6px 13px 7px #7627273e;
+  position: relative;
+  z-index: 1;
+
+  .desktop-menu {
+    font-size: 1.3rem;
+    align-content: center;
+    display: block;
+    position: relative;
+
+    a {
+      color: $brun;
+      text-decoration: none;
+
+      &:hover {
+        color: $röd;
+        text-decoration: underline;
+      }
+    }
+
+    ul {
+      li {
+        display: inline;
+        margin-left: 3rem;
+      }
+    }
+  }
+
+  /* Hide hamburger by default */
+  .hamburger {
+    display: none;
+
+    ul {
+      margin: 0;
+      padding: 0;
+      margin-right: -2px;
+      list-style: none;
+      overflow: hidden;
+      background-color: $brun;
+      min-width: 30%;
+      position: absolute;
+      right: 2px;
+
+      li {
+        a {
+          display: block;
+          padding: 20px 20px;
+          border-right: 2px solid $röd;
+          color: $vit; // Bytt #fff till $vit
+          text-decoration: none;
+
+          &:hover {
+            background-color: $vit;
+            color: $brun;
+          }
+        }
+      }
+    }
+
+    .menu {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease-out;
+    }
+
+    .menu-icon {
+      cursor: pointer;
+      display: inline-block;
+      padding: 28px 20px;
+      position: relative;
+      user-select: none;
+      margin-bottom: -5px;
+
+      .navicon {
+        background: $brun;
+        display: block;
+        height: 2px;
+        position: relative;
+        transition: background 0.2s ease-out;
+        width: 18px;
+
+        &:before,
+        &:after {
+          background: $brun;
+          content: "";
+          display: block;
+          height: 100%;
+          position: absolute;
+          transition: all 0.2s ease-out;
+          width: 100%;
+        }
+
+        &:before {
+          top: 5px;
+        }
+
+        &:after {
+          top: -5px;
+        }
+      }
+    }
+
+    #menu-btn {
+      display: none;
+
+      &:checked {
+        ~ .menu {
+          max-height: 240px;
+        }
+
+        ~ .menu-icon {
+          background-color: $brun;
+
+          .navicon {
+            background: transparent;
+
+            &:before {
+              transform: rotate(-45deg);
+              background: $vit; // Bytt #fff till $vit
+            }
+
+            &:after {
+              transform: rotate(45deg);
+              background: $vit; // Bytt #fff till $vit
+            }
+          }
+
+          &:not(.steps) {
+            .navicon:before,
+            .navicon:after {
+              top: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Media query for mobile */
+@media (max-width: 1080px) {
+  header {
+    .desktop-menu {
+      display: none;
+    }
+
+    .hamburger {
+      display: block;
+    }
+  }
+}
+
+/* Evenemang button styles */
+.evenemang-button {
+  a {
+    color: $vit;
+    background: $orange;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    border: 2px solid $brun;
+
+    &:hover {
+      color: $vit;
+      background-color: $brun;
+      text-decoration: none;
+      border: 2px solid $röd;
+    }
+  }
+}
+
+@media (width > 77.5em) {
+  .desktop-menu {
+    display: block;
+    margin-left: auto;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}
