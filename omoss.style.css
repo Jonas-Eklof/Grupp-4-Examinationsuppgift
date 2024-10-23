@@ -357,7 +357,8 @@ footer{
         color: black;
         
         }
-        
+        /*header*/
+
         @media only screen and (max-width: 545px) {
             footer{
                 margin-left: -12px;
@@ -368,6 +369,70 @@ footer{
               
             }
           }
-        /*header*/
+
+          @media only screen and (max-width: 610px) {
+            .about-us{
+            
+            padding:10px;
+            font-size:15px;
+            margin-bottom:20px;
+            margin-left: -600px;
+              
+            }
+          }
+          @media only screen and (max-width: 610px) {
+            .all{
+            margin-left: 0px;
+            padding:10px;
+            font-size: 10px;
+            margin-bottom:20px;
+            height: 100%;
+            width: 610px;
+            
+            }
+          }
+          
+          @media only screen and (max-width: 610px) {
+            .card-1{
+            margin-left: 140px;
+            width: 470px;
+            height:170px
+        
+            }
+          }
+          @media only screen and (max-width: 610px) {
+            .card-2{
+            margin-left: 140px;
+            margin-top:  25px;
+            width: 470px;
+            height: 170px;
+            }
+          }
+          @media only screen and (max-width: 610px) {
+            .members{
+            margin-left: 40px;
+            margin-top: -50px;
+            }
+          }
+
+          @media only screen and (max-width: 610px) {
+            .member-1{
+            width: 470px;
+            height: 250px
+            }
+          }
+          @media only screen and (max-width: 610px) {
+            .member-2{
+            width: 470px;
+            height:250px;
+    
+            }
+          }
+          @media only screen and (max-width: 610px) {
+            .member-3{
+                width: 470px;
+                height:250px;
+            }
+          }
 
  
