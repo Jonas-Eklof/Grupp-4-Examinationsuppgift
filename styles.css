@@ -1295,6 +1295,12 @@ body {
     min-width: 50%;
   }
 }
+
+@media (max-width: 700px) {
+  .bocker-kort {
+    min-width: 90%;
+  }
+}
 /* ------------------------- slut Böcker kort  ---------------------------- */
 
 
