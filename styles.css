@@ -843,6 +843,12 @@ body {
   justify-content: center;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.206);
 }
+.start-header h2 {
+  color: #fab0a6;
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding: 0 0 0 5vh;
+}
 .start-header h3 {
   color: #f4f4f8;
   font-size: 3.1rem;
