@@ -1298,19 +1298,6 @@ body {
 /* ------------------------- slut Böcker kort  ---------------------------- */
 
 
-/*Om oss sidan laptop 13 tum */
-@media (max-width: 1500px) {
-  .all {
-    width:90vw;
-  }
-  .about-us {
-    margin-left:50vh;
-  }
-  .owners {
-    margin-left:50vh;
-  }
-}
-
 
 
 /*# sourceMappingURL=styles.css.map */
