@@ -11,7 +11,7 @@
 
 body {
   font-family: Inter, Arial, sans-serif;
-  background-color: var(--brun);
+  background-color: $brun;
 }
 
 .container {
@@ -699,14 +699,12 @@ body {
     }
 
     h2 {
-      font-size: 1.2rem;
-      font-weight: 500;
+      @include style-text-startsida;
       padding: 0 5vh 0 5vh;
     }
 
     p {
-      font-size: 1.2rem;
-      font-weight: 500;
+      @include style-text-startsida;
       padding: 0 5vh 0 0vh;
     }
   }
@@ -884,7 +882,7 @@ body {
   .bocker-kort {
     display: flex;
     max-width: 40%;
-    background-color: var(--vit);
+    background-color: $vit;
     margin-inline: auto;
     margin-bottom: 5rem;
     border-radius: 12px;
@@ -901,7 +899,7 @@ body {
 
     .bocker-info {
       padding: 2rem 1rem;
-      color: var(--röd);
+      color: $röd;
       display: flex;
       flex-direction: column;
 
@@ -910,7 +908,7 @@ body {
       }
 
       .genre {
-        color: var(--brun);
+        color: $brun;
         margin-bottom: 0.7rem;
       }
 
@@ -921,18 +919,18 @@ body {
       .order-button {
         align-self: flex-end;
         min-width: 30%;
-        color: var(--vit);
-        background: var(--orange);
+        color: $vit;
+        background: $orange;
         padding: 1rem 2rem;
         border-radius: 10px;
-        border: 2px solid var(--brun);
+        border: 2px solid $brun;
         text-align: center;
 
         &:hover {
-          color: var(--vit);
-          background-color: var(--brun);
+          color: $vit;
+          background-color: $brun;
           text-decoration: none;
-          border: 2px solid var(--röd);
+          border: 2px solid $röd;
         }
       }
     }
